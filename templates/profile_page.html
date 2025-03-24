@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile - Online Vegetable Delivery</title>
+<style>
+/* Background Layer */
+.background-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('plant frame.jpg'); /* Replace 'farm-background.jpg' with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Profile Container */
+.profile-container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Profile Information */
+.profile-info {
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Profile Actions */
+.profile-actions {
+    text-align: center;
+}
+
+.profile-actions button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00a651;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-actions button:hover {
+    background-color: #007e3a;
+}
+
+/* Profile Image */
+.profile-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+</style>
+</head>
+<body>
+
+<div class="background-layer"></div>
+
+<div class="profile-container">
+    <div class="profile-header">
+        <h1>Profile</h1>
+    </div>
+    <div class="profile-image">
+        <img src="profile-picture.jpg" alt="Profile Picture"> <!-- Replace 'profile-picture.jpg' with your image file -->
+    </div>
+    <div class="profile-info">
+        <p>Name: {{ user.first_name}} {{ user.last_name}}</p>
+        <p>Email: {{ user.email}}</p>
+        <p>Phone: +1234567890</p>
+        <p>Address: 123 Farm Road, Farmville</p>
+    </div>
+    <div class="profile-actions">
+        <button>Edit Profile</button>
+        <button>Change Password</button>
+        <a href="/logout"><button>Logout</button></a>
+    </div>
+</div>
+
+</body>
+</html>

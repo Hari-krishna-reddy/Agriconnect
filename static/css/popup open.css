@@ -1,0 +1,147 @@
+/* General Popup Container Styling */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid #28a745; /* Match the theme's green color */
+    z-index: 1000;
+    width: 400px; /* Adjust width as needed */
+    max-height: 80vh; /* Limit height to 80% of the viewport */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: zoomIn 0.5s ease forwards;
+}
+
+/* Display active popup */
+.popup-container.active {
+    display: block;
+    animation: zoomIn 0.5s ease forwards;
+}
+
+/* Animation for Popup */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Scrollbar Styling for Webkit Browsers */
+.popup-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.popup-container::-webkit-scrollbar-thumb {
+    background-color: #28a745;
+    border-radius: 4px;
+}
+
+.popup-container::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+}
+
+/* Form Container Styling */
+.form-container {
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Consistent dark text color */
+}
+
+.form-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555; /* Subtle gray for labels */
+}
+
+/* General Styling for Form Inputs */
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #28a745;
+    outline: none;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    appearance: none;
+}
+
+/* Dropdown-specific Styling */
+.form-container select {
+    cursor: pointer;
+    background: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%238a8a8a' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 10px center;
+    background-size: 14px 14px;
+}
+
+/* Focus State for Inputs and Dropdowns */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus,
+.form-container input[type="email"]:focus,
+.form-container select:focus {
+    border-color: #218838;
+    box-shadow: 0 0 5px rgba(33, 136, 56, 0.5);
+}
+
+/* Submit Button Styling */
+.form-container input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Close Button Styling */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #d40000;
+    cursor: pointer;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .popup-container {
+        width: 90%; /* Adjust popup width for smaller screens */
+        max-height: 90vh; /* Adjust height for smaller screens */
+    }
+}

@@ -1,0 +1,1558 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Vege</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,800;1,400&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- popup css-->
+      <link rel="stylesheet" href="{% static 'css/popup open.css'%}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      
+      <style>
+        /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(swiper.min.css);
+@import url(slick.css);
+@import url(jquery.fancybox.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Sen', sans-serif;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+a {
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: normal;
+    color: #111111;
+    margin: 0
+}
+
+h1 {
+    font-size: 24px
+}
+
+h2 {
+    font-size: 22px
+}
+
+h3 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+    text-decoration: none!important;
+    opacity: 1
+}
+
+button:focus {
+    outline: none;
+}
+
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+p {
+    margin: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+    outline: none !important;
+}
+
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ :focus {
+    outline: 0;
+}
+
+.paddind_bottom_0 {
+    padding-bottom: 0 !important;
+}
+
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #ddd;
+    padding: 12px 40px;
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767676;
+    margin: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+    border: none !important;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+blockquote {
+    margin: 20px 0 20px;
+    padding: 30px;
+}
+
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.full {
+    float: left;
+    width: 100%;
+}
+
+.layout_padding {
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+.padding_0 {
+    padding: 0px;
+}
+
+
+/* header section start */
+
+.header_section {
+    width: 100%;
+    float: left;
+    background-color: #00a651;
+    height: auto;
+    background-size: 100%;
+}
+
+.header_bg {
+    background: #fb6818;
+    border-bottom: 1px solid #ffffff;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.mr-auto,
+.mx-auto {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #252525;
+}
+
+.navbar-brand {
+    margin: 0px;
+    float: right;
+}
+
+.navbar {
+    padding: 15px 65px;
+}
+
+.search_icon {
+    width: 100px;
+    float: right;
+    color: #ffffff;
+    text-align: right;
+    font-size: 18px;
+}
+
+.search_icon:hover {
+    color: #252525;
+}
+
+
+/* header section end */
+.welcome_message {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-top: 7%; /* Add padding-top to push the message lower */
+    margin-top: 50px; /* Alternatively, you can use margin-top for additional space */
+}
+
+.welcome_message h2 {
+    font-size: 24px;
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+
+
+.layout_border {
+    width: 100%;
+    float: left;
+    border: 1px solid #000;
+    margin: 20px 0px;
+}
+
+/* footer section start */
+
+.footer_section {
+    width: 100%;
+    float: left;
+    background-color: #232323;
+    height: auto;
+    background-size: 100%;
+    padding: 90px 0px;
+}
+
+.footer_text {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Sen', sans-serif;
+}
+
+.footer_menu {
+    width: 100%;
+    float: left;
+}
+
+.footer_menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer_menu li a {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer_menu li a:hover {
+    color: #ffffff;
+}
+
+span.angle_icon {
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+span.angle_icon:hover {
+    color: #00a651;
+}
+
+span.angle_icon.active {
+    color: #00a651;
+}
+
+.footer_main {
+    width: 50%;
+    float: right;
+}
+
+p.dummy_text {
+    width: 70%;
+    font-size: 16px;
+    color: #fff;
+    margin: 0px;
+}
+
+.social_icon {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.social_icon ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.social_icon li {
+    float: left;
+}
+
+.social_icon li a {
+    float: left;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 100%;
+    font-size: 16px;
+    margin-right: 5px;
+    width: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social_icon li a:hover {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #232323;
+}
+
+.location_text {
+    width: 100%;
+    float: left;
+}
+
+.location_text ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.location_text li {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0px 0px 10px 0px;
+}
+
+.location_text li a {
+    color: #ffffff;
+    display: flex;
+}
+
+.location_text li a:hover {
+    color: #00a651;
+}
+
+.padding_left_10 {
+    padding-right: 10px;
+}
+
+
+/* footer section end */
+
+
+/* copyright section start */
+
+.copyright_section {
+    width: 100%;
+    float: left;
+    background-color: #252525;
+    height: auto;
+}
+
+.copyright_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.copyright_text a {
+    color: #ffffff;
+}
+
+.copyright_text a:hover {
+    color: #00a651;
+}
+
+
+/* copyright section end */
+
+.margin_bottom90 {
+    margin-bottom: 90px;
+}
+/* General Styling for Popup */
+.popup-container {
+    display: none;
+    position: absolute; /* Switch to absolute for simpler positioning */
+    top: 55px; /* Adjust the values as needed */
+    left: 72%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px solid green;
+    z-index: 9999;
+    width: 350px;
+    height:500px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 0.5s ease forwards;
+}
+
+
+/* Animation for Popup */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.popup-container.active {
+    display: block;
+}
+
+/* Style for Profile Icon Button */
+/* Style for Profile Icon Button */
+.profile_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Size of circular button */
+    height: 40px;
+    border-radius: 50%; /* Circular shape */
+    background-color: #f0f0f0; /* Light gray background */
+    cursor: pointer; /* Makes it clickable */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    overflow: hidden; /* Ensures the image stays within bounds */
+}
+
+/* Image Styling */
+.profile_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container properly */
+    border-radius: 50%; /* Ensures circular shape */
+}
+
+
+/* Close Button Styling */
+.close-btn {
+    position: absolute;
+    top: 8px; /* Position from the top */
+    right: 8px; /* Position from the right */
+    color: #d40000; /* Red color */
+    cursor: pointer;
+    font-size: 22px; /* Size of the close button */
+}
+
+.close-btn:hover {
+    color: red; /* Hover effect */
+}
+
+/* Profile Popup Content Styling */
+.popup-content {
+    padding: 10px;
+}
+
+/* Title Styling */
+.popup-content h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for Links in Popup */
+.popup-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+.popup-content ul li {
+    margin: 10px 0;
+}
+
+.popup-content ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+.popup-content ul li a:hover {
+    color: #28a745; /* Highlight color */
+    font-weight: bold;
+}
+/* General styles for the buttons */
+.circular-btn {
+    display: inline-block;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px; /* Makes the button cylindrical */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin:10px;
+}
+.button-container {
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+    align-items: center;    /* Center buttons horizontally */
+    justify-content: center; /* Center buttons vertically */
+    height: 20vh;          /* Full height to vertically center in the page */
+    margin-top: 40px;       /* Moves it down */
+    padding-top: 20px;      /* Extra spacing at the top */
+}
+
+.circular-btn:hover {
+    background-color: #181717; /* Darker green on hover */
+    cursor: pointer;
+}
+ /* Add Product Popup Container */
+ #addProductPopup {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4); /* Black with transparency */
+    }
+
+    /* Add Product Popup Content */
+    #addProductPopup .popup-content {
+        background-color: white;
+        margin: 15% auto; /* Adjusted margin for a smaller view */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%; /* Reduced width for a smaller popup */
+        border-radius: 8px;
+        border: 3px solid green;
+    }
+
+    /* Add Product Popup Form Styling */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 2px; /* Reduced gap between elements */
+    }
+
+    /* Labels and inputs styling */
+    label {
+        font-size: 14px; /* Smaller font size for labels */
+    }
+    /* Style for the dropdown */
+        select {
+            width: 100%%;                /* Set the width of the dropdown */
+            padding: 10px;               /* Add padding for better spacing */
+            border: 1px solid #ccc;   /* Green border */
+            border-radius: 5px;          /* Slightly rounded corners */
+            font-size: 16px;             /* Adjust font size */
+            color: #333;                 /* Text color */
+            background-color: #fff;      /* Background color */
+            appearance: none;            /* Remove default browser styling (optional) */
+            outline: none;               /* Remove outline on focus */
+            transition: border-color 0.3s ease; /* Smooth transition on hover/focus */
+        }
+
+        /* Style for dropdown focus */
+        select:focus {
+            border-color: #45a049;       /* Change border color on focus */
+            box-shadow: 0 0 5px #45a049; /* Add a slight glow effect */
+        }
+
+        /* Style for dropdown options */
+        option {
+            padding: 10px;               /* Add spacing to options */
+        }
+
+    input, textarea {
+        padding: 6px; /* Reduced padding */
+        font-size: 16px; /* Reduced font size */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    /* Close button */
+    .close-btn {
+        color: red;
+        float: right;
+        font-size: 35px; /* Smaller close button */
+        font-weight: bold;
+    }
+
+    .close-btn:hover,
+    .close-btn:focus {
+        color: red;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Button Styling */
+    .circular-btn {
+        display: inline-block;
+        background-color: #4CAF50; /* Green color */
+        color: white;
+        padding: 8px 16px; /* Adjusted padding */
+        border-radius: 50px; /* Cylindrical button */
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px; /* Smaller font size */
+        width: 100%; /* Makes button full-width */
+        transition: background-color 0.3s ease; /* Smooth hover transition */
+    }
+
+    .circular-btn:hover {
+        background-color:#181717; /* Darker green on hover */
+        cursor: pointer;
+    }
+    
+    /* Dashboard Popup Styling */
+    #dashboardPopup {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 30%;
+        top: 10%;
+        width: 38%;
+        height: 47%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    }
+
+    #dashboardPopup .popup-content {
+        background: #fff;
+        margin: 2% auto;
+        padding: 20px;
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+   
+
+    /* Dashboard List Items */
+    #dashboardPopup ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #dashboardPopup ul li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+ /* Vegetable Section Start */
+.vagetables_section {
+    width: 100%;
+    float: left;
+    border-radius: 60px;
+}
+
+.vagetables_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+.vagetables_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #232323;
+    margin: 0px;
+}
+
+.vagetables_section_2 {
+    width: 100%;
+    float: left;
+    border-radius: 60px;
+    padding: 40px 0px 0px 0px;
+}
+
+/* Image Styling for Uniformity */
+.vagetable_item figure img {
+    width: 100%; /* Make image fill its parent container */
+    height: 210px; /* Fixed height for all images */
+    object-fit: cover; /* Maintains aspect ratio while filling the container */
+    border-radius: 10px; /* Rounded corners for the image */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.vagetable_item:hover figure img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.column {
+    margin: 15px 0px 0;
+    padding: 0;
+}
+
+.column:last-child {
+    padding-bottom: 30px;
+}
+
+.column::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.harshal_text {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #333333;
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+.rate_text {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 22px;
+    color: #00a651;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+/* Buttons Styling */
+.read_more_btn, .add_to_cart_btn {
+    padding: 8px 20px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.read_more_btn {
+    background-color: #00a651;
+    color: #fff;
+    
+}
+
+.read_more_btn:hover {
+    background-color: #252525;
+    color: #fafafa;
+    transform: scale(1.1);
+}
+
+.add_to_cart_btn {
+    background-color: rgb(226, 12, 12);
+    color: #fff;
+    margin-left: 15px;
+}
+
+.add_to_cart_btn:hover {
+    background-color: #252525;
+    color: #fafafa;
+    transform: scale(1.1);
+}
+
+/* Location Styling */
+.location {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    margin-top: 8px;
+}
+.location i {
+    color: green;
+    margin-right: 6px;
+}
+.location span {
+    margin-top: -4px; /* Moves the text up by about 1 line */
+}
+#editProductPopup {
+    position: fixed;
+    top: 35%; /* Move slightly up (reduce %) */
+    left: 40%; /* Move slightly to the left */
+    bott
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px; /* Adjust as per your requirements */
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: none; /* Initially hidden */
+}
+
+#editProductPopup .popup-content {
+    text-align: center;
+}
+
+#editProductPopup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+#editProductPopup form {
+    margin-top: 20px;
+}
+
+#editProductPopup button.circular-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#editProductPopup button.circular-btn:hover {
+    background-color: #218838;
+}
+
+#popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none; /* Initially hidden */
+}
+
+
+/* Recent Orders Section */
+.recent_orders_section {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.recent_orders_title {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Grid Layout */
+.recent_orders_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Order Card Styling */
+.order_card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #00a651; /* Highlighting the order */
+}
+
+.order_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Order Title */
+.order_card_title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Order Info */
+.order_card_info {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Shipping Details */
+.shipping_info {
+    font-size: 14px;
+    font-style: italic;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Order Button Container */
+.order_buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* View Details Button */
+.order_detail_btn {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #00a651;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.order_detail_btn:hover {
+    background-color: #028c3c;
+    transform: scale(1.05);
+}
+
+/* Load More Button */
+.load_more_btn {
+    padding: 12px 35px;
+    font-size: 18px;
+    background-color: #FF6A00;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Align Load More Button */
+.load_more_btn_container {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.load_more_btn:hover {
+    background-color: #d35400;
+    transform: scale(1.1);
+}
+
+/* Grid Layout: 4 items per row */
+.col-md-3 {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .col-md-3 {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-3 {
+        width: 45%;
+    }
+
+    .recent_orders_grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order_card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-3 {
+        width: 100%;
+    }
+
+    .order_card {
+        width: 100%;
+    }
+}
+
+    
+
+
+
+
+      </style>
+      
+   </head>
+   <body>
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand"href="/home"><img src="{% static 'images/logo.png' %}"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleDashboardPopup()">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="{% url 'chat_room' %}">Chat</a>
+
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)" onclick="toggleAddProductPopup()">Add Product</a>
+                     </li>
+                    
+                     
+                    
+                     
+                  </ul>
+                 <!-- Profile Icon Button with Image -->
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="profile_icon" onclick="toggleProfilePopup()">
+                            <img src="https://th.bing.com/th/id/OIP.AGbLJGHiSDtJZxhPHK7-tgHaG7?w=196&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Profile" class="profile-img"> <!-- Replace with the actual image path -->
+                        </div>
+                    </form>
+
+                  
+               </div>
+            </nav>
+         </div>
+      </div>
+     <!-- Popup Code Start -->
+
+      <!-- Dashboard Popup (Initially hidden) -->
+<div id="dashboardPopup" class="popup-container">
+    <div class="popup-content">
+        <span class="close-btn" onclick="toggleDashboardPopup()">&times;</span>
+        <h3>Dashboard Summary</h3>
+        <ul>
+            <!-- Dashboard summary details -->
+            <li><strong>Total Products Listed:</strong> 120</li>
+            <li><strong>Recent Orders:</strong> 15</li>
+            <li><strong>Total Earnings:</strong> ₹75,000</li>
+            <li><strong>Profit:</strong> ₹30,000</li>
+        </ul>
+        
+    </div>
+</div>
+
+      <!-- Add Product Popup -->
+<div id="addProductPopup" class="popup-container">
+    <div class="popup-content">
+        <span class="close-btn" onclick="toggleAddProductPopup()">&times;</span>
+        <h3>Add Product</h3>
+        <form action="{% url 'add_product' %}" method="POST" enctype="multipart/form-data">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required><br><br>
+
+            <label for="productCategory">Category:</label>
+            <select id="productCategory" name="productCategory" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="fruits">Fruits</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="grains">Grains</option>
+                <option value="dairy">Dairy</option>
+                <option value="meat">Meat</option>
+                <option value="beverages">Beverages</option>
+                <option value="snacks">Snacks</option>
+                <option value="spices">Spices</option>
+                <option value="others">Others</option>
+            </select>
+            <br><br>
+            <label for="productunit">Unit:</label>
+            <select id="productunit" name="productunit" required>
+                <option value="" disabled selected>Select a unit</option>
+                <option value="kg">Kilogram</option>
+                <option value="liter">Liter</option>
+                <option value="dozen">Dozen</option>
+                <option value="unit">Unit</option>
+            </select>
+            <br><br>
+
+
+
+            <label for="productPrice">Price per Unit:</label>
+            <input type="number" id="productPrice" name="productPrice" step="1" required><br><br>
+
+            <label for="productQuantity">Quantity:</label>
+            <input type="number" id="productQuantity" name="productQuantity" required><br><br>
+
+            <label for="productDescription">Description:</label><br>
+            <textarea id="productDescription" name="productDescription" rows="4" cols="50" required></textarea><br><br>
+
+            <!-- Image Upload Section -->
+            <label for="productImages">Upload Product Images:</label>
+            <input type="file" id="productImages" name="productImages[]" accept="image/*" multiple><br><br>
+
+            <button type="submit" class="circular-btn">Add Product</button>
+        </form>
+    </div>
+</div>
+
+     <!-- Profile Popup (Initially hidden) -->
+        <div id="profilePopup" class="popup-container">
+            <div class="popup-content">
+            <span class="close-btn" onclick="toggleProfilePopup()">&times;</span>
+            <h3>Profile Options</h3>
+            <ul>
+                <!-- Full Name -->
+        <li><strong>Full Name:</strong> {{ user.first_name }} {{ user.last_name }}</li>
+        
+        <!-- Contact Number -->
+        {% if profile.phone_number %}
+            <li><strong>Contact Number:</strong> {{ profile.phone_number }}</li>
+        {% else %}
+            <li><strong>Contact Number:</strong> Not available</li>
+        {% endif %}
+        
+        <!-- Email Address -->
+        <li><strong>Email Address:</strong> {{ user.email }}</li>
+        
+        <!-- Address (state, district, subdistrict, village) -->
+        <li><strong>Address:</strong>
+            {% if profile.state %}
+                {{ profile.state }},
+            {% endif %}
+            {% if profile.district %}
+                {{ profile.district }},
+            {% endif %}
+            {% if profile.subdistrict %}
+                {{ profile.subdistrict }},
+            {% endif %}
+            {% if profile.village %}
+                {{ profile.village }}
+            {% endif %}
+        </li>
+    </ul>
+
+    <!-- Optionally, other profile-related sections can be added here -->
+
+            <!-- Profile actions as cylindrical buttons -->
+            <div class="button-container">
+            <li><span class="circular-btn" onclick="togglePopup('editProfilePopup')">Edit Profile</span></li>
+            <li><span class="circular-btn" onclick="togglePopup('changePasswordPopup')">Change Password</span></li>
+            <li><a href="/logout" class="circular-btn">Logout</a></li>
+            <li><a href="#" class="circular-btn">Change profile image</a></li>
+            </div>
+            </ul>
+            </div>
+        </div>
+
+<!-- Edit Profile Popup -->
+<div id="editProfilePopup" class="popup-container">
+    <div class="popup-content">
+        <span class="close-btn" onclick="togglePopup('editProfilePopup')">&times;</span>
+        <h3>Edit Profile</h3>
+        <!-- Form for editing profile -->
+        <form action="{% url 'edit_profile' %}" method="post">
+            {% csrf_token %}
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name" value="{{ user.first_name }}" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" value="{{ user.last_name }}" required>
+
+            <!-- Email Field -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" value="{{ user.email }}" required>
+
+            <label for="phone_number">Contact Number:</label>
+            <input type="text" name="phone_number" id="phone_number" value="{{ profile.phone_number }}" required>
+             
+            
+            <button type="submit">Save Changes</button>
+            
+        </form>
+    </div>
+</div>
+
+<!-- Change Password Popup -->
+<div id="changePasswordPopup" class="popup-container">
+    <div class="popup-content">
+        <span class="close-btn" onclick="togglePopup('changePasswordPopup')">&times;</span>
+        <h3>Change Password</h3>
+        <!-- Form for changing password -->
+        <form action="{% url 'change_password' %}" method="post">
+            {% csrf_token %}
+            
+
+            <label for="new_password">New Password:</label>
+            <input type="password" name="new_password" id="new_password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" name="confirm_password" id="confirm_password" required>
+             
+            
+            <button type="submit">Change Password</button>
+           
+        </form>
+    </div>
+</div>
+<!-- welcome message-->
+        <div class="welcome_message">
+            <h2>Welcome, Farmer!({{ user.first_name }})</h2>
+        </div>
+        
+           <!-- Vegetable section start -->
+<div class="vagetables_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="vagetables_taital">My Posts</h1>
+            </div>
+        </div>
+        <div class="vagetables_grid">
+            <div class="row">
+                {% for product in products %}
+                <div class="col-md-4">
+                    <div class="vagetable_item hover01">
+                        <figure>
+                            <!-- Display the product images -->
+                            <img src="{{ product.fixed_image_url }}" alt="{{ product.name }}">
+
+                        </figure>
+                        <h3 class="vagetable_name">{{ product.name }}</h3>
+                        <h3 class="vagetable_price">₹{{ product.price_per_unit }}/{{ product.unit }}</h3>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <!-- Display the location information -->
+                            <span>{{ product.seller.profile.state }}, {{ product.seller.profile.district }}, {{ product.seller.profile.subdistrict }}, {{ product.seller.profile.village }}</span>
+                        </div>
+                        <div class="read_more">
+                            <!-- Edit link (you can add actual functionality later) -->
+                            <a href="#" class="read_more_btn" onclick="openEditPopup({{ product.id }}, '{{ product.name }}', '{{ product.price_per_unit }}')">Edit</a>
+                            <!-- Delete link (you can link to a delete view) -->
+                            <a href="{% url 'delete_product' product.id %}" class="add_to_cart_btn">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <p>You haven't posted any products yet.</p>
+                {% endfor %}
+            </div> <!-- End of row -->
+            <br>
+        </div> <!-- End of vagetables_grid -->
+        
+    </div> <!-- End of container -->
+</div> <!-- End of vagetables_section -->
+<!-- Vegetable section end -->
+
+<!-- Edit Product Popup -->
+<div id="editProductPopup" class="popup-container" style="display: none;">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeEditPopup()">&times;</span>
+        <h3>Edit Product</h3>
+        <form id="editProductForm" action="{% url 'edit_product' %}" method="POST">
+            {% csrf_token %}
+            <input type="hidden" id="editProductId" name="product_id">
+            
+            <label for="editProductName">Product Name:</label>
+            <input type="text" id="editProductName" name="name" readonly><br><br>
+            
+            <label for="editProductPrice">Price per Unit:</label>
+            <input type="number" id="editProductPrice" name="price_per_unit" step="1" required><br><br>
+            
+            <button type="submit" class="circular-btn">Update</button>
+        </form>
+    </div>
+</div>
+
+
+    <!-- Recent Orders Section -->
+<div class="recent_orders_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1 class="recent_orders_title">Recent Orders</h1>
+            </div>
+        </div>
+
+        <!-- Order Items (Recent 3 Orders) -->
+        <div class="recent_orders_grid">
+            <div class="row">
+                {% for order in orders %}
+                <div class="col-md-3">
+                    <div class="order_card">
+                        <h3 class="order_card_title">Order ID: #{{ order.id }}</h3>
+                        <p class="order_card_info">Date: {{ order.placed_at|date:"F d, Y" }}</p>
+                        <p class="order_card_info">Total Price: ₹{{ order.total_price }}</p>
+                        <p class="order_card_info"><strong>Shipping Address:</strong> {{ order.shipping_details }}</p>
+                        <div class="order_buttons">
+                            <a href="#" class="order_detail_btn">View Details</a>
+                            {% comment %} <a href="{% url 'order_details' order.id %}" class="order_detail_btn">View Details</a> {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12 text-center">
+                    <p>No recent orders found.</p>
+                </div>
+                {% endfor %}
+            </div> <!-- End of recent orders row -->
+        </div> <!-- End of order items grid -->
+
+        <!-- Load More Button -->
+        <div class="text-left">
+            <button class="load_more_btn" onclick="loadAllOrders()">Load All Orders...</button>
+        </div>
+    </div>
+</div>
+
+
+        
+       <!-- footer section start -->
+       <div class="footer_section layout_padding">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-4 col-sm-6">
+                 <h3 class="footer_text">Useful links</h3>
+                 <div class="footer_menu">
+                    <ul>
+                       <li class="active"><a href="#"><span class="angle_icon active"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Home</a></li>
+                       <li><a href="/shop"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  Shop</a></li>
+                       <li><a href="/orders"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Orders</a></li>
+                       <li><a href="/chat"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Chat</a></li>
+                       <li><a href="/cart"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  cart</a></li>
+                       <li><a href="/wishlist"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  Wishlist</a></li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                 <h3 class="footer_text">Address</h3>
+                 <div class="location_text">
+                    <ul>
+                       <li>
+                          <a href="#">
+                          <span class="padding_left_10"><i class="fa fa-map-marker" aria-hidden="true"></i></span>Nambur,VVIT college,Guntur,Andhra Pradesh<br> reader will be distracted</a>
+                       </li>
+                       <li>
+                          <a href="tel:+918618480105">
+                          <span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>(+91) 8618480105
+                          </a>
+                       </li>
+                       <li>
+                          <a href="mailto:harikrishnachennuri537@gmail.com">
+                          <span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>harikrishnachennuri537@gmail.com
+                          </a>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                 <div class="footer_main">
+                    <h3 class="footer_text">Find Us</h3>
+                    <p class="dummy_text">for more updates-Follow our pages</p>
+                    <div class="social_icon">
+                       <ul>
+                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- footer section end -->
+     <!-- copyright section start -->
+     <div class="copyright_section">
+        <div class="container">
+           <p class="copyright_text">2024 All Rights Reserved. Design by AgriConnect(Chennuri Hari Krishna Reddy)</p>
+       </div>
+     </div>
+      <!-- Javascript files-->
+       <script>
+      // Function to toggle the profile popup visibility
+            function toggleProfilePopup() {
+            const popup = document.getElementById('profilePopup');
+            popup.classList.toggle('active'); // Adds or removes 'active' class to show/hide popup
+            }
+
+       </script>
+       <!-- JavaScript to Toggle Add Product Popup -->
+<script>
+    // Function to toggle the "Add Product" popup visibility
+    function toggleAddProductPopup() {
+        var popup = document.getElementById("addProductPopup");
+        popup.style.display = popup.style.display === "block" ? "none" : "block";
+    }
+</script>
+<script>
+    // Toggle the Dashboard Popup
+    function toggleDashboardPopup() {
+        const popup = document.getElementById("dashboardPopup");
+        popup.style.display = popup.style.display === "block" ? "none" : "block";
+    }
+</script>
+<script>
+    function openEditPopup(productId, productName, productPrice) {
+        // Populate form fields with product data
+        document.getElementById('editProductId').value = productId;
+        document.getElementById('editProductName').value = productName;
+        document.getElementById('editProductPrice').value = productPrice;
+
+        // Show the popup
+        document.getElementById('editProductPopup').style.display = 'block';
+    }
+
+    function closeEditPopup() {
+        // Hide the popup
+        document.getElementById('editProductPopup').style.display = 'none';
+    }
+</script>
+<script>
+    function togglePopup(popupId) {
+        const popup = document.getElementById(popupId);
+        popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+    }
+    
+</script>
+
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      
+      <script src="{% static 'js/click to open popup.js' %}"></script>
+   </body>
+</html>

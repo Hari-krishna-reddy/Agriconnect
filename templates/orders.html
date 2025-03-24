@@ -1,0 +1,1452 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Vege</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,800;1,400&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- popup css-->
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      
+      <style>
+        /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(swiper.min.css);
+@import url(slick.css);
+@import url(jquery.fancybox.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Sen', sans-serif;
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+a {
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: normal;
+    color: #111111;
+    margin: 0
+}
+
+h1 {
+    font-size: 24px
+}
+
+h2 {
+    font-size: 22px
+}
+
+h3 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+    text-decoration: none!important;
+    opacity: 1
+}
+
+button:focus {
+    outline: none;
+}
+
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+p {
+    margin: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+    outline: none !important;
+}
+
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ :focus {
+    outline: 0;
+}
+
+.paddind_bottom_0 {
+    padding-bottom: 0 !important;
+}
+
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #ddd;
+    padding: 12px 40px;
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767676;
+    margin: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+    border: none !important;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+blockquote {
+    margin: 20px 0 20px;
+    padding: 30px;
+}
+
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.full {
+    float: left;
+    width: 100%;
+}
+
+.layout_padding {
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+.padding_0 {
+    padding: 0px;
+}
+
+
+/* header section start */
+
+.header_section {
+    width: 100%;
+    float: left;
+    background-color: #00a651;
+    height: auto;
+    background-size: 100%;
+    margin-bottom: 20px; /* Add margin at the bottom of the navbar */
+}
+
+.header_bg {
+    background: #fb6818;
+    border-bottom: 1px solid #ffffff;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.mr-auto,
+.mx-auto {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #252525;
+}
+
+.navbar-brand {
+    margin: 0px;
+    float: right;
+}
+
+.navbar {
+    padding: 15px 65px;
+}
+
+.search_icon {
+    width: 100px;
+    float: right;
+    color: #ffffff;
+    text-align: right;
+    font-size: 18px;
+}
+
+.search_icon:hover {
+    color: #252525;
+}
+/* General styling for all icons */
+.nav-link .fa-comments,
+.nav-link .fa-shopping-cart,
+.nav-link .fa-heart,
+.nav-link .fa-store,
+.nav-link .fa-box {
+    font-size: 20px; /* Icon size */
+    color: #555; /* Default color for icons */
+    margin-left: 5px; /* Spacing between text and icon */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for Chat icon */
+.nav-link:hover .fa-comments {
+    color: #007bff; /* Blue color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Hover effect for Cart icon */
+.nav-link:hover .fa-shopping-cart {
+    color: #1c1d1c; /* Green color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Hover effect for Wishlist icon */
+.nav-link:hover .fa-heart {
+    color: #dc3545; /* Red color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+.nav-link:hover .fa-store {
+    color: #2155a3; /* Green color on hover */
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+.nav-link:hover .fa-box {
+    color: #ff4500; /* Orange color on hover */
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+
+
+
+
+
+      
+
+
+
+/* footer section start */
+
+.footer_section {
+    width: 100%;
+    float: left;
+    background-color: #232323;
+    height: auto;
+    background-size: 100%;
+    padding: 90px 0px;
+}
+
+.footer_text {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Sen', sans-serif;
+}
+
+.footer_menu {
+    width: 100%;
+    float: left;
+}
+
+.footer_menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer_menu li a {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer_menu li a:hover {
+    color: #ffffff;
+}
+
+span.angle_icon {
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+span.angle_icon:hover {
+    color: #00a651;
+}
+
+span.angle_icon.active {
+    color: #00a651;
+}
+
+.footer_main {
+    width: 50%;
+    float: right;
+}
+
+p.dummy_text {
+    width: 70%;
+    font-size: 16px;
+    color: #fff;
+    margin: 0px;
+}
+
+.social_icon {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.social_icon ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.social_icon li {
+    float: left;
+}
+
+.social_icon li a {
+    float: left;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 100%;
+    font-size: 16px;
+    margin-right: 5px;
+    width: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social_icon li a:hover {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #232323;
+}
+
+.location_text {
+    width: 100%;
+    float: left;
+}
+
+.location_text ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.location_text li {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0px 0px 10px 0px;
+}
+
+.location_text li a {
+    color: #ffffff;
+    display: flex;
+}
+
+.location_text li a:hover {
+    color: #00a651;
+}
+
+.padding_left_10 {
+    padding-right: 10px;
+}
+
+
+/* footer section end */
+ 
+
+/* copyright section start */
+
+.copyright_section {
+    width: 100%;
+    float: left;
+    background-color: #252525;
+    height: auto;
+}
+
+.copyright_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.copyright_text a {
+    color: #ffffff;
+}
+
+.copyright_text a:hover {
+    color: #00a651;
+}
+
+
+/* copyright section end */
+
+.margin_bottom90 {
+    margin-bottom: 90px;
+}
+/* General Styling for Popup */
+.popup-container {
+    display: none;
+    position: absolute; /* Switch to absolute for simpler positioning */
+    top: 55px; /* Adjust the values as needed */
+    left: 72%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px solid green;
+    z-index: 9999;
+    width: 300px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 0.5s ease forwards;
+}
+
+
+/* Animation for Popup */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.popup-container.active {
+    display: block;
+}
+
+/* Style for Profile Icon Button */
+.profile_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Size of circular button */
+    height: 40px;
+    border-radius: 50%; /* Circular shape */
+    background-color: #f0f0f0; /* Light gray background */
+    cursor: pointer; /* Makes it clickable */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    padding: 5px; /* Add some spacing around the icon */
+}
+
+/* Icon Styling */
+.profile_icon i {
+    font-size: 20px; /* Icon size */
+    color: #555; /* Icon color */
+}
+
+/* Close Button Styling */
+.close-btn {
+    position: absolute;
+    top: 8px; /* Position from the top */
+    right: 8px; /* Position from the right */
+    color: #d40000; /* Red color */
+    cursor: pointer;
+    font-size: 22px; /* Size of the close button */
+}
+
+.close-btn:hover {
+    color: red; /* Hover effect */
+}
+
+/* Profile Popup Content Styling */
+.popup-content {
+    padding: 10px;
+}
+
+/* Title Styling */
+.popup-content h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for Links in Popup */
+.popup-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+.popup-content ul li {
+    margin: 10px 0;
+}
+
+.popup-content ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+.popup-content ul li a:hover {
+    color: #28a745; /* Highlight color */
+    font-weight: bold;
+}
+/* General styles for the buttons */
+.circular-btn {
+    display: inline-block;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px; /* Makes the button cylindrical */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.circular-btn:hover {
+    background-color: #181717; /* Darker green on hover */
+    cursor: pointer;
+}
+ 
+    /* Dashboard Popup Styling */
+    #dashboardPopup {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 30%;
+        top: 10%;
+        width: 30%;
+        height: 45%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    }
+
+    #dashboardPopup .popup-content {
+        background: #fff;
+        margin: 2% auto;
+        padding: 20px;
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+   
+
+    /* Dashboard List Items */
+    #dashboardPopup ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #dashboardPopup ul li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+
+
+    /* my orders css start*/
+    .order-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Box */
+.order-box {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.timeline .line {
+            height: 0;
+            animation: grow-line 2s ease-out forwards;
+        }
+        @keyframes grow-line {
+            from { height: 0; }
+            to { height: 100%; }
+        }
+        .star {
+            cursor: pointer;
+            font-size: 20px;
+            color: gray;
+        }
+        .star.active {
+            color: gold;
+        }
+
+/* Order Item */
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Product Details */
+.item-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+}
+
+.item-details img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.price {
+    font-size: 16px;
+    color: #007b00;
+    font-weight: bold;
+}
+
+/* Shipping Tracking */
+.shipping-status {
+    width: 50%;
+    padding-left: 20px;
+    position: relative;
+}
+
+.status-text {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.status-text.delivered {
+    color: green;
+}
+
+.status-text.in-progress {
+    color: orange;
+}
+
+/* Vertical Timeline */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+/* Animated Tracking Line */
+.line {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 3px;
+    background: #007bff;
+    animation: grow-line 2s ease-out forwards;
+}
+
+/* Animate the line growing */
+@keyframes grow-line {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+/* Timeline Steps */
+.step {
+    position: relative;
+    padding: 15px 0;
+    font-size: 14px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: fade-in 0.5s ease-out forwards;
+}
+
+/* Step Animation Delay */
+.step:nth-child(1) { animation-delay: 0.2s; }
+.step:nth-child(2) { animation-delay: 0.6s; }
+.step:nth-child(3) { animation-delay: 1s; }
+.step:nth-child(4) { animation-delay: 1.4s; }
+
+/* Animate the steps appearing */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Step Circles */
+.step::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: gray;
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+    top: 18px;
+    animation: glow-step 2s ease-out forwards;
+}
+
+/* Glowing effect for completed steps */
+@keyframes glow-step {
+    0% {
+        background: gray;
+    }
+    100% {
+        background: green;
+    }
+}
+
+/* Completed Steps */
+.step.completed {
+    color: green;
+    font-weight: bold;
+}
+
+.step.completed::before {
+    background: green;
+}
+
+/* Pending Steps */
+.step.pending::before {
+    background: lightgray;
+}
+
+//* Review Section */
+.review-section {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.review-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Stars */
+.stars {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ddd;
+}
+
+.stars .star {
+    transition: color 0.3s ease;
+}
+
+.stars .star.active,
+.stars .star:hover {
+    color: gold;
+}
+
+/* Review Textarea */
+.review-section textarea {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* Buttons */
+button {
+    display: block;
+    background: #007BFF;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.edit-review {
+    background: #f39c12;
+}
+
+.edit-review:hover {
+    background: #e67e22;
+}
+
+/* --- POPUP STYLES --- */
+.edit-review-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Show Popup */
+.edit-review-popup.show {
+    display: block;
+}
+
+/* Popup Content */
+.popup-content h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.popup-content textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    resize: none;
+}
+/* Align Buttons in a Row */
+.edit-review-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Style for Buttons */
+.edit-review-buttons button {
+    flex: 1;
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.save-review {
+    background: #28a745;
+}
+
+.save-review:hover {
+    background: #218838;
+}
+
+.close-popup {
+    background: #dc3545;
+}
+
+.close-popup:hover {
+    background: #c82333;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* my orders css end*/
+
+
+
+      </style>
+      
+   </head>
+   <body>
+    <div class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!-- Brand Logo -->
+                <a class="navbar-brand" href="/customer_home_page">
+                    <img src="{% static 'images/logo.png' %}" alt="Logo">
+                </a>
+                <!-- Toggle Button for Mobile -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/customer_home_page">Home</a>
+                        </li>
+                        {% comment %} <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="toggleDashboardPopup()">Dashboard</a>
+                        </li> {% endcomment %}
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/shop">
+                                Shop
+                                <i class="fa fa-store" aria-hidden="true"></i> <!-- Shop icon -->
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/orders">
+                                Orders
+                                <i class="fa fa-box" aria-hidden="true"></i> <!-- Orders icon -->
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="{% url 'chat_room' %}">Chat <i class="fa fa-comments" aria-hidden="true"></i></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cart">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/wishlist">Wishlist <i class="fa fa-heart" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <!-- Profile Icon -->
+                    <div class="profile_icon" onclick="toggleProfilePopup()">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+     <!-- Popup Code Start -->
+
+      <!-- Dashboard Popup (Initially hidden) -->
+<div id="dashboardPopup" class="popup-container">
+    <div class="popup-content">
+        <span class="close-btn" onclick="toggleDashboardPopup()">&times;</span>
+        <h3>Dashboard Summary</h3>
+        <ul>
+            <!-- Dashboard summary details -->
+            <li><strong>Total Products Purchased:</strong> 120</li>
+            <li><strong>Recent Orders:</strong> 15</li>
+            <li><strong>Total Money Spent:</strong> ₹75,000</li>
+            
+        </ul>
+        
+    </div>
+</div>
+
+      
+<!-- Profile Popup (Initially hidden) -->
+<div id="profilePopup" class="popup-container">
+    <div class="popup-content">
+    <span class="close-btn" onclick="toggleProfilePopup()">&times;</span>
+    <h3>Profile Options</h3>
+    <ul>
+        <!-- Full Name -->
+<li><strong>Full Name:</strong> {{ user.first_name }} {{ user.last_name }}</li>
+
+<!-- Contact Number -->
+{% if profile.phone_number %}
+    <li><strong>Contact Number:</strong> {{ profile.phone_number }}</li>
+{% else %}
+    <li><strong>Contact Number:</strong> Not available</li>
+{% endif %}
+
+<!-- Email Address -->
+<li><strong>Email Address:</strong> {{ user.email }}</li>
+
+<!-- Address (state, district, subdistrict, village) -->
+<li><strong>Address:</strong>
+    {% if profile.state %}
+        {{ profile.state }},
+    {% endif %}
+    {% if profile.district %}
+        {{ profile.district }},
+    {% endif %}
+    {% if profile.subdistrict %}
+        {{ profile.subdistrict }},
+    {% endif %}
+    {% if profile.village %}
+        {{ profile.village }}
+    {% endif %}
+</li>
+</ul>
+
+<!-- Optionally, other profile-related sections can be added here -->
+
+    <!-- Profile actions as cylindrical buttons -->
+    <div class="button-container">
+    <li><a href="/change-password" class="circular-btn">Change Password</a></li>
+    <li><a href="/logout" class="circular-btn">Logout</a></li>
+    </div>
+    </ul>
+    </div>
+</div>
+        
+
+<!-- my orders start-->
+
+
+<div class="order-container">
+    {% for order in orders %}
+        <div class="order-box" data-order-id="{{ order.id }}">
+            <h3>Order #{{ order.id }} - Status: <span class="status-text">{{ order.get_status_display }}</span></h3>
+
+            {% for item in order.items.all %}
+                <div class="order-item">
+                    <div class="item-details">
+                        <img src="{{ item.fixed_image_url }}" alt="Product Image">
+
+                        <div>
+                            <h4>{{ item.product.name }}</h4>
+                            <p class="price">₹ {{ item.price_at_purchase }}</p>
+                            <p>Quantity: {{ item.quantity }}</p>
+                        </div>
+                    </div>
+
+                    <div class="shipping-status">
+                        <div class="timeline">
+                            <div class="line"></div>
+                            <div class="step {% if order.status in 'ordered shipped out_for_delivery delivered' %}completed{% endif %}">Ordered</div>
+                            <div class="step {% if order.status in 'shipped out_for_delivery delivered' %}completed{% endif %}">Shipped</div>
+                            <div class="step {% if order.status in 'out_for_delivery delivered' %}completed{% else %}pending{% endif %}">Out for Delivery</div>
+                            <div class="step {% if order.status == 'delivered' %}completed{% else %}pending{% endif %}">Delivered</div>
+                        </div>
+                    </div>
+
+                    {% if order.status == 'delivered' %}
+                        {% if item.review %}
+                            <div class="review-section">
+                                <h4>Your Review</h4>
+                                <p>⭐ {{ item.review.rating }} - {{ item.review.comment }}</p>
+                                <button class="edit-review" onclick="openEditPopup({{ item.product.id }}, '{{ item.review.rating }}', '{{ item.review.comment }}')">Edit</button>
+                            </div>
+                        {% else %}
+                            <div class="review-section">
+                                <h4>Write a Review</h4>
+                                <form id="reviewForm" method="post" action="/submit_review/">
+                                    {% csrf_token %}
+                                <input type="hidden" name="product_id" id="product_id" value={{ item.product.id }}>
+                                <div class="stars" data-item-id="{{ item.id }}">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <input type="hidden" name="rating" id="rating" value="">
+                                <textarea placeholder="Write your review..." data-item-id="{{ item.id }}" name="comment"></textarea>
+                                <button type=submit>Submit</button>
+                            </form>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Attach event listeners to rating stars
+        document.querySelectorAll(".stars .star").forEach(star => {
+            star.addEventListener("click", function () {
+                let rating = this.getAttribute('data-value');
+    
+                let starsContainer = this.closest(".stars");
+                let hiddenInput = starsContainer.nextElementSibling; // Find the next input field
+    
+                if (hiddenInput && hiddenInput.name === "rating") {
+                    hiddenInput.value = rating; // Update the correct input
+                }
+    
+                starsContainer.setAttribute("data-rating", rating);
+                highlightStars(starsContainer, rating);
+            });
+        });
+    });
+    
+    // Function to highlight selected stars
+    function highlightStars(container, rating) {
+        let stars = container.querySelectorAll(".star");
+        stars.forEach(star => {
+            if (star.getAttribute("data-value") <= rating) {
+                star.style.color = "gold";
+            } else {
+                star.style.color = "gray";
+            }
+        });
+    }
+    
+    // Function to open the edit review popup
+    function openEditPopup(itemId, rating, comment) {
+        document.getElementById("editItemId").value = itemId;
+        document.getElementById("editRating").value = rating;
+        document.getElementById("editComment").value = comment;
+    
+        let starsContainer = document.getElementById("editStars");
+        starsContainer.setAttribute("data-rating", rating); // Set data-rating to preserve previous rating
+        highlightStars(starsContainer, rating);
+    
+        document.getElementById("editPopup").style.display = "block";
+    }
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select all close buttons
+        document.querySelectorAll(".close-popup").forEach(button => {
+            button.addEventListener("click", function () {
+                document.getElementById("editPopup").style.display = "none";
+            });
+        });
+    
+        // Close popup when clicking outside of it
+        window.addEventListener("click", function (event) {
+            let popup = document.getElementById("editPopup");
+            if (event.target === popup) {
+                popup.style.display = "none";
+            }
+        });
+    });
+    
+    
+    function getCSRFToken() {
+        return document.cookie.split("; ").find(row => row.startsWith("csrftoken")).split("=")[1];
+    }
+    
+</script>
+
+<!-- Edit Review Popup -->
+<div id="editPopup" class="edit-review-popup" style="display: none;">
+    <div class="popup-content">
+        <h4>Edit Your Review</h4>
+
+        <form id="editReviewForm" method="post" action="/submit_review/">
+            {% csrf_token %}
+            <input type="hidden" name="product_id" id="editItemId" value="">
+
+            <div class="stars" id="editStars">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+
+            <input type="hidden" name="rating" id="editRating" value="">
+
+            <label for="editComment">Comment:</label>
+            <textarea name="comment" id="editComment" placeholder="Update your review..."></textarea>
+
+            <div class="edit-review-buttons">
+                <button type="submit" class="save-review">Save</button>
+                <button type="button" class="close-popup" >Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- my orders end-->
+        
+
+        
+
+
+         
+
+           
+
+
+        
+ <!-- footer section start -->
+ <div class="footer_section layout_padding">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-4 col-sm-6">
+             <h3 class="footer_text">Useful links</h3>
+             <div class="footer_menu">
+                <ul>
+                   <li class="active"><a href="#"><span class="angle_icon active"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Home</a></li>
+                   <li><a href="/shop"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  Shop</a></li>
+                   <li><a href="/orders"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Orders</a></li>
+                   <li><a href="/chat"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Chat</a></li>
+                   <li><a href="/cart"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  cart</a></li>
+                   <li><a href="/wishlist"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  Wishlist</a></li>
+                </ul>
+             </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+             <h3 class="footer_text">Address</h3>
+             <div class="location_text">
+                <ul>
+                   <li>
+                      <a href="#">
+                      <span class="padding_left_10"><i class="fa fa-map-marker" aria-hidden="true"></i></span>Nambur,VVIT college,Guntur,Andhra Pradesh<br> reader will be distracted</a>
+                   </li>
+                   <li>
+                      <a href="tel:+918618480105">
+                      <span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>(+91) 8618480105
+                      </a>
+                   </li>
+                   <li>
+                      <a href="mailto:harikrishnachennuri537@gmail.com">
+                      <span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>harikrishnachennuri537@gmail.com
+                      </a>
+                   </li>
+                </ul>
+             </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+             <div class="footer_main">
+                <h3 class="footer_text">Find Us</h3>
+                <p class="dummy_text">for more updates-Follow our pages</p>
+                <div class="social_icon">
+                   <ul>
+                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                   </ul>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <!-- footer section end -->
+ <!-- copyright section start -->
+ <div class="copyright_section">
+    <div class="container">
+       <p class="copyright_text">2024 All Rights Reserved. Design by AgriConnect(Chennuri Hari Krishna Reddy)</p>
+   </div>
+ </div>
+      <!-- Javascript files-->
+       <script>
+      // Function to toggle the profile popup visibility
+            function toggleProfilePopup() {
+            const popup = document.getElementById('profilePopup');
+            popup.classList.toggle('active'); // Adds or removes 'active' class to show/hide popup
+            }
+
+       </script>
+       <!-- JavaScript to Toggle Add Product Popup -->
+
+        <!-- review order js start-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll(".stars .star").forEach(star => {
+                    star.addEventListener("click", function () {
+                        let rating = this.getAttribute("data-value");
+                        let stars = this.parentElement.querySelectorAll(".star");
+                        this.parentElement.setAttribute("data-rating", rating);
+                        stars.forEach((s, index) => {
+                            s.classList.toggle("active", index < rating);
+                        });
+                    });
+                });
+    
+               
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+    function openEditPopup(button) {
+        let reviewSection = button.closest(".review-section");
+        let existingReview = reviewSection.querySelector(".user-review")?.innerText.trim() || "";
+        let existingRating = reviewSection.querySelector(".user-review")?.dataset.rating || "0";
+
+        let popup = document.querySelector(".edit-review-popup");
+        popup.querySelector("textarea").value = existingReview;
+        popup.querySelector(".stars").setAttribute("data-rating", existingRating);
+
+        // Show the popup
+        popup.classList.add("show");
+    }
+
+    function closeEditPopup() {
+        document.querySelector(".edit-review-popup").classList.remove("show");
+    }
+
+    // Attach event to all edit buttons
+    document.querySelectorAll(".edit-review").forEach(button => {
+        button.addEventListener("click", function () {
+            openEditPopup(this);
+        });
+    });
+
+    // Close popup when clicking cancel button
+    document.querySelector(".close-popup").addEventListener("click", closeEditPopup);
+});
+
+
+        </script>
+         <!--review order js ends-->
+
+<script>
+    // Toggle the Dashboard Popup
+    function toggleDashboardPopup() {
+        const popup = document.getElementById("dashboardPopup");
+        popup.style.display = popup.style.display === "block" ? "none" : "block";
+    }
+</script>
+<script>
+    function toggleWishlist(element) {
+    element.parentElement.classList.toggle('active');
+}
+
+</script>
+
+ 
+
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      
+      <script src="{% static 'js/click to open popup.js' %}"></script>
+   </body>
+</html>

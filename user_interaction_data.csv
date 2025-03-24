@@ -1,0 +1,502 @@
+user_id,product_id,views_user,add_to_cart,wishlist_adds_user,purchase,timestamp,user_address
+user_518,prod_1975,17,0,1,1,2025-03-23 11:45:09,Andhra Pradesh
+user_11,prod_1011,12,22,3,2,2025-03-23 11:45:09,Andhra Pradesh
+user_284,prod_12451,20,3,1,0,2025-03-23 11:45:09,Goa
+user_304,prod_6116,20,1,2,1,2025-03-23 11:45:09,Gujarat
+user_466,prod_4496,4,2,3,1,2025-03-23 11:45:09,Kerala
+user_501,prod_10086,19,3,3,1,2025-03-23 11:45:09,Madhya Pradesh
+user_495,prod_6431,2,0,0,0,2025-03-23 11:45:09,Madhya Pradesh
+user_451,prod_7779,15,1,2,1,2025-03-23 11:45:09,Kerala
+user_72,prod_16315,4,1,1,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_10,prod_17015,16,3,2,1,2025-03-23 11:45:09,Andhra Pradesh
+user_26,prod_3300,14,0,2,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_276,prod_13795,16,3,2,1,2025-03-23 11:45:09,Goa
+user_420,prod_12677,7,4,3,1,2025-03-23 11:45:09,Karnataka
+user_215,prod_14806,8,5,3,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_293,prod_15131,13,2,2,1,2025-03-23 11:45:09,Gujarat
+user_496,prod_5361,16,1,2,1,2025-03-23 11:45:09,Madhya Pradesh
+user_510,prod_9039,3,4,1,0,2025-03-23 11:45:09,Madhya Pradesh
+user_302,prod_10659,3,3,2,0,2025-03-23 11:45:09,Gujarat
+user_354,prod_4892,19,0,0,1,2025-03-23 11:45:09,Himachal Pradesh
+user_189,prod_8120,12,2,1,0,2025-03-23 11:45:09,Chhattisgarh
+user_330,prod_14775,13,4,1,1,2025-03-23 11:45:09,Haryana
+user_387,prod_14566,15,5,3,1,2025-03-23 11:45:09,Jammu & Kashmir
+user_465,prod_7361,4,0,0,1,2025-03-23 11:45:09,Kerala
+user_469,prod_806,12,3,2,1,2025-03-23 11:45:09,Lakshadweep
+user_380,prod_3086,19,4,3,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_469,prod_1857,18,1,2,1,2025-03-23 11:45:09,Lakshadweep
+user_427,prod_7134,8,0,2,0,2025-03-23 11:45:09,Karnataka
+user_195,prod_8399,12,5,0,1,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_503,prod_2126,10,4,2,1,2025-03-23 11:45:09,Madhya Pradesh
+user_431,prod_7752,20,3,0,0,2025-03-23 11:45:09,Karnataka
+user_84,prod_729,16,1,0,1,2025-03-23 11:45:09,Arunachal Pradesh
+user_342,prod_2317,13,5,3,1,2025-03-23 11:45:09,Himachal Pradesh
+user_462,prod_3621,13,0,3,0,2025-03-23 11:45:09,Kerala
+user_386,prod_16440,6,0,1,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_145,prod_140,6,4,3,0,2025-03-23 11:45:09,Chandigarh
+user_311,prod_12736,14,0,2,0,2025-03-23 11:45:09,Gujarat
+user_209,prod_14214,4,1,1,1,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_400,prod_10955,9,0,0,1,2025-03-23 11:45:09,Jharkhand
+user_160,prod_10370,12,4,2,1,2025-03-23 11:45:09,Chandigarh
+user_290,prod_799,8,2,2,0,2025-03-23 11:45:09,Goa
+user_405,prod_8941,11,0,0,0,2025-03-23 11:45:09,Jharkhand
+user_249,prod_235,7,0,2,0,2025-03-23 11:45:09,Delhi
+user_299,prod_523,13,2,0,1,2025-03-23 11:45:09,Gujarat
+user_17,prod_6208,13,3,2,1,2025-03-23 11:45:09,Andhra Pradesh
+user_74,prod_8425,5,3,1,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_170,prod_16807,1,4,2,0,2025-03-23 11:45:09,Chhattisgarh
+user_152,prod_12835,20,3,1,1,2025-03-23 11:45:09,Chandigarh
+user_103,prod_3119,11,2,0,1,2025-03-23 11:45:09,Assam
+user_72,prod_4638,6,5,1,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_161,prod_5654,18,0,2,1,2025-03-23 11:45:09,Chandigarh
+user_180,prod_1974,15,5,0,0,2025-03-23 11:45:09,Chhattisgarh
+user_424,prod_4625,9,0,1,0,2025-03-23 11:45:09,Karnataka
+user_442,prod_2665,12,1,2,0,2025-03-23 11:45:09,Kerala
+user_15,prod_15416,11,4,3,0,2025-03-23 11:45:09,Andhra Pradesh
+user_467,prod_12853,3,4,2,1,2025-03-23 11:45:09,Lakshadweep
+user_182,prod_3593,2,0,0,1,2025-03-23 11:45:09,Chhattisgarh
+user_148,prod_6410,20,4,2,1,2025-03-23 11:45:09,Chandigarh
+user_363,prod_17111,16,0,1,0,2025-03-23 11:45:09,Himachal Pradesh
+user_397,prod_11552,20,5,1,0,2025-03-23 11:45:09,Jharkhand
+user_234,prod_158,7,0,0,1,2025-03-23 11:45:09,Daman & Diu
+user_41,prod_5793,19,1,3,0,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_487,prod_12863,4,2,0,1,2025-03-23 11:45:09,Lakshadweep
+user_312,prod_10417,16,4,2,1,2025-03-23 11:45:09,Gujarat
+user_394,prod_16122,19,4,2,1,2025-03-23 11:45:09,Jharkhand
+user_178,prod_14790,4,2,2,1,2025-03-23 11:45:09,Chhattisgarh
+user_228,prod_8896,9,1,0,1,2025-03-23 11:45:09,Daman & Diu
+user_341,prod_17201,20,3,3,1,2025-03-23 11:45:09,Haryana
+user_278,prod_3403,17,0,0,0,2025-03-23 11:45:09,Goa
+user_125,prod_8697,10,2,2,0,2025-03-23 11:45:09,Bihar
+user_383,prod_14855,4,2,2,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_512,prod_16031,19,1,3,1,2025-03-23 11:45:09,Madhya Pradesh
+user_158,prod_8832,11,1,0,0,2025-03-23 11:45:09,Chandigarh
+user_400,prod_1520,3,4,1,0,2025-03-23 11:45:09,Jharkhand
+user_256,prod_10856,1,0,0,1,2025-03-23 11:45:09,Delhi
+user_492,prod_6231,15,2,1,1,2025-03-23 11:45:09,Madhya Pradesh
+user_244,prod_6367,19,0,2,0,2025-03-23 11:45:09,Delhi
+user_237,prod_16193,13,2,2,1,2025-03-23 11:45:09,Daman & Diu
+user_344,prod_11964,16,3,0,1,2025-03-23 11:45:09,Himachal Pradesh
+user_130,prod_10478,14,3,3,0,2025-03-23 11:45:09,Bihar
+user_469,prod_14415,19,4,0,1,2025-03-23 11:45:09,Lakshadweep
+user_128,prod_2467,16,5,3,0,2025-03-23 11:45:09,Bihar
+user_381,prod_7004,13,3,0,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_460,prod_13576,4,0,1,0,2025-03-23 11:45:09,Kerala
+user_449,prod_4060,16,4,3,0,2025-03-23 11:45:09,Kerala
+user_449,prod_1648,6,2,2,1,2025-03-23 11:45:09,Kerala
+user_505,prod_8808,6,4,0,0,2025-03-23 11:45:09,Madhya Pradesh
+user_400,prod_10331,9,0,1,1,2025-03-23 11:45:09,Jharkhand
+user_308,prod_10945,4,2,3,1,2025-03-23 11:45:09,Gujarat
+user_292,prod_8354,7,5,3,0,2025-03-23 11:45:09,Gujarat
+user_317,prod_7245,7,1,0,1,2025-03-23 11:45:09,Haryana
+user_269,prod_6148,3,0,3,1,2025-03-23 11:45:09,Goa
+user_199,prod_6358,15,3,3,1,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_286,prod_4001,9,2,3,0,2025-03-23 11:45:09,Goa
+user_378,prod_9188,1,4,0,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_76,prod_1454,1,2,0,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_146,prod_6568,18,4,2,1,2025-03-23 11:45:09,Chandigarh
+user_141,prod_12477,15,1,2,1,2025-03-23 11:45:09,Bihar
+user_229,prod_17099,6,1,3,0,2025-03-23 11:45:09,Daman & Diu
+user_418,prod_17804,15,0,0,1,2025-03-23 11:45:09,Karnataka
+user_235,prod_16210,4,2,0,1,2025-03-23 11:45:09,Daman & Diu
+user_357,prod_10500,6,1,1,1,2025-03-23 11:45:09,Himachal Pradesh
+user_260,prod_6936,2,4,2,1,2025-03-23 11:45:09,Delhi
+user_343,prod_12501,6,3,2,0,2025-03-23 11:45:09,Himachal Pradesh
+user_328,prod_819,19,5,2,0,2025-03-23 11:45:09,Haryana
+user_308,prod_544,17,5,2,0,2025-03-23 11:45:09,Gujarat
+user_102,prod_3242,10,0,1,0,2025-03-23 11:45:09,Assam
+user_374,prod_13274,18,1,2,1,2025-03-23 11:45:09,Jammu & Kashmir
+user_341,prod_9409,1,5,3,1,2025-03-23 11:45:09,Haryana
+user_449,prod_12570,14,5,3,1,2025-03-23 11:45:09,Kerala
+user_204,prod_2827,4,3,1,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_15,prod_2429,3,2,0,0,2025-03-23 11:45:09,Andhra Pradesh
+user_70,prod_1170,3,4,1,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_497,prod_11499,1,2,3,1,2025-03-23 11:45:09,Madhya Pradesh
+user_372,prod_7949,13,5,0,1,2025-03-23 11:45:09,Jammu & Kashmir
+user_419,prod_14202,18,5,0,0,2025-03-23 11:45:09,Karnataka
+user_312,prod_8990,2,4,2,1,2025-03-23 11:45:09,Gujarat
+user_195,prod_1474,13,0,2,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_106,prod_13931,4,1,1,0,2025-03-23 11:45:09,Assam
+user_287,prod_3341,8,3,2,1,2025-03-23 11:45:09,Goa
+user_322,prod_13211,12,3,0,1,2025-03-23 11:45:09,Haryana
+user_384,prod_15431,17,5,1,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_66,prod_2685,1,1,1,0,2025-03-23 11:45:09,Andhra Pradesh
+user_409,prod_9298,9,4,1,1,2025-03-23 11:45:09,Jharkhand
+user_198,prod_8472,13,0,0,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_85,prod_10477,11,2,0,1,2025-03-23 11:45:09,Arunachal Pradesh
+user_279,prod_16400,4,3,2,0,2025-03-23 11:45:09,Goa
+user_236,prod_473,8,0,0,0,2025-03-23 11:45:09,Daman & Diu
+user_172,prod_14733,2,2,2,1,2025-03-23 11:45:09,Chhattisgarh
+user_199,prod_11956,5,0,3,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_86,prod_14051,18,4,2,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_305,prod_983,12,1,2,1,2025-03-23 11:45:09,Gujarat
+user_448,prod_9209,2,4,3,1,2025-03-23 11:45:09,Kerala
+user_343,prod_13001,2,2,1,0,2025-03-23 11:45:09,Himachal Pradesh
+user_122,prod_14560,9,5,2,0,2025-03-23 11:45:09,Bihar
+user_350,prod_14103,2,3,1,0,2025-03-23 11:45:09,Himachal Pradesh
+user_483,prod_14363,20,3,0,0,2025-03-23 11:45:09,Lakshadweep
+user_411,prod_15759,2,3,0,0,2025-03-23 11:45:09,Jharkhand
+user_497,prod_13709,3,1,3,1,2025-03-23 11:45:09,Madhya Pradesh
+user_60,prod_3877,8,1,1,1,2025-03-23 11:45:09,Andhra Pradesh
+user_306,prod_14612,19,1,1,1,2025-03-23 11:45:09,Gujarat
+user_123,prod_6957,3,3,0,0,2025-03-23 11:45:09,Bihar
+user_469,prod_10881,15,2,1,0,2025-03-23 11:45:09,Lakshadweep
+user_326,prod_4218,18,2,2,0,2025-03-23 11:45:09,Haryana
+user_494,prod_16694,8,1,2,1,2025-03-23 11:45:09,Madhya Pradesh
+user_515,prod_6040,4,3,1,1,2025-03-23 11:45:09,Madhya Pradesh
+user_459,prod_17206,6,4,1,1,2025-03-23 11:45:09,Kerala
+user_10,prod_8489,8,4,2,0,2025-03-23 11:45:09,Andhra Pradesh
+user_400,prod_4691,7,2,0,1,2025-03-23 11:45:09,Jharkhand
+user_261,prod_5664,10,0,1,1,2025-03-23 11:45:09,Delhi
+user_26,prod_4725,13,3,0,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_132,prod_17569,18,0,1,1,2025-03-23 11:45:09,Bihar
+user_99,prod_1256,20,4,2,0,2025-03-23 11:45:09,Assam
+user_475,prod_8991,9,5,2,1,2025-03-23 11:45:09,Lakshadweep
+user_49,prod_15018,1,4,1,0,2025-03-23 11:45:09,Andhra Pradesh
+user_350,prod_7492,10,0,0,0,2025-03-23 11:45:09,Himachal Pradesh
+user_293,prod_13712,20,2,2,0,2025-03-23 11:45:09,Gujarat
+user_94,prod_9044,12,3,1,1,2025-03-23 11:45:09,Assam
+user_510,prod_16721,4,5,2,1,2025-03-23 11:45:09,Madhya Pradesh
+user_108,prod_343,9,0,0,1,2025-03-23 11:45:09,Assam
+user_170,prod_7396,2,5,3,0,2025-03-23 11:45:09,Chhattisgarh
+user_425,prod_15686,12,1,2,0,2025-03-23 11:45:09,Karnataka
+user_464,prod_16382,16,0,2,1,2025-03-23 11:45:09,Kerala
+user_356,prod_14473,13,1,0,0,2025-03-23 11:45:09,Himachal Pradesh
+user_407,prod_543,8,2,0,1,2025-03-23 11:45:09,Jharkhand
+user_214,prod_1375,4,1,2,1,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_27,prod_9938,19,2,2,0,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_91,prod_6960,13,4,3,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_245,prod_10703,20,3,0,0,2025-03-23 11:45:09,Delhi
+user_119,prod_2296,5,0,1,0,2025-03-23 11:45:09,Bihar
+user_186,prod_12624,18,4,3,1,2025-03-23 11:45:09,Chhattisgarh
+user_27,prod_7407,8,5,2,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_349,prod_11481,20,3,0,0,2025-03-23 11:45:09,Himachal Pradesh
+user_84,prod_16539,2,5,1,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_376,prod_6386,18,0,1,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_326,prod_14570,16,1,3,1,2025-03-23 11:45:09,Haryana
+user_258,prod_13261,13,3,3,1,2025-03-23 11:45:09,Delhi
+user_218,prod_4792,13,4,3,1,2025-03-23 11:45:09,Daman & Diu
+user_390,prod_158,8,2,1,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_323,prod_8418,17,3,1,1,2025-03-23 11:45:09,Haryana
+user_334,prod_1050,18,3,1,0,2025-03-23 11:45:09,Haryana
+user_336,prod_3566,1,5,0,0,2025-03-23 11:45:09,Haryana
+user_95,prod_4574,12,4,2,0,2025-03-23 11:45:09,Assam
+user_518,prod_7156,3,5,3,0,2025-03-23 11:45:09,Andhra Pradesh
+user_251,prod_599,1,3,2,0,2025-03-23 11:45:09,Delhi
+user_212,prod_4907,11,4,2,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_504,prod_12413,18,4,2,0,2025-03-23 11:45:09,Madhya Pradesh
+user_153,prod_6301,12,1,1,1,2025-03-23 11:45:09,Chandigarh
+user_43,prod_4372,10,2,1,1,2025-03-23 11:45:09,Andhra Pradesh
+user_424,prod_5283,8,0,0,1,2025-03-23 11:45:09,Karnataka
+user_277,prod_16485,20,2,3,0,2025-03-23 11:45:09,Goa
+user_498,prod_4478,13,2,1,0,2025-03-23 11:45:09,Madhya Pradesh
+user_169,prod_14252,6,1,1,0,2025-03-23 11:45:09,Chhattisgarh
+user_406,prod_1220,7,3,1,0,2025-03-23 11:45:09,Jharkhand
+user_52,prod_11121,13,0,3,0,2025-03-23 11:45:09,Andhra Pradesh
+user_154,prod_9205,8,3,1,0,2025-03-23 11:45:09,Chandigarh
+user_119,prod_6794,16,5,3,0,2025-03-23 11:45:09,Bihar
+user_487,prod_1627,5,3,2,0,2025-03-23 11:45:09,Lakshadweep
+user_34,prod_8149,2,5,0,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_222,prod_7139,16,1,0,0,2025-03-23 11:45:09,Daman & Diu
+user_344,prod_9549,19,4,2,0,2025-03-23 11:45:09,Himachal Pradesh
+user_233,prod_11020,10,4,2,1,2025-03-23 11:45:09,Daman & Diu
+user_25,prod_8207,13,1,3,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_502,prod_13363,12,2,3,1,2025-03-23 11:45:09,Madhya Pradesh
+user_169,prod_10844,17,2,2,1,2025-03-23 11:45:09,Chhattisgarh
+user_388,prod_6539,20,5,3,1,2025-03-23 11:45:09,Jammu & Kashmir
+user_102,prod_4545,15,0,2,0,2025-03-23 11:45:09,Assam
+user_272,prod_5471,13,3,2,0,2025-03-23 11:45:09,Goa
+user_451,prod_16058,14,4,0,0,2025-03-23 11:45:09,Kerala
+user_215,prod_12032,1,5,3,1,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_334,prod_8775,2,1,3,0,2025-03-23 11:45:09,Haryana
+user_146,prod_2749,14,1,3,0,2025-03-23 11:45:09,Chandigarh
+user_491,prod_2278,11,4,2,1,2025-03-23 11:45:09,Lakshadweep
+user_455,prod_11382,3,1,3,1,2025-03-23 11:45:09,Kerala
+user_361,prod_1116,6,4,2,1,2025-03-23 11:45:09,Himachal Pradesh
+user_41,prod_16604,11,3,1,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_331,prod_1729,4,3,0,1,2025-03-23 11:45:09,Haryana
+user_223,prod_9329,10,4,1,0,2025-03-23 11:45:09,Daman & Diu
+user_322,prod_1618,3,1,2,1,2025-03-23 11:45:09,Haryana
+user_493,prod_6457,2,1,1,1,2025-03-23 11:45:09,Madhya Pradesh
+user_75,prod_7668,8,4,2,1,2025-03-23 11:45:09,Arunachal Pradesh
+user_250,prod_696,3,3,0,1,2025-03-23 11:45:09,Delhi
+user_198,prod_14840,4,5,1,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_503,prod_3424,9,5,2,1,2025-03-23 11:45:09,Madhya Pradesh
+user_88,prod_16337,15,3,1,1,2025-03-23 11:45:09,Arunachal Pradesh
+user_306,prod_17740,5,5,0,1,2025-03-23 11:45:09,Gujarat
+user_344,prod_1011,6,3,3,0,2025-03-23 11:45:09,Himachal Pradesh
+user_270,prod_6486,13,3,0,0,2025-03-23 11:45:09,Goa
+user_291,prod_12136,3,0,0,0,2025-03-23 11:45:09,Goa
+user_71,prod_8967,20,1,0,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_79,prod_8173,2,3,0,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_499,prod_7930,8,5,3,1,2025-03-23 11:45:09,Madhya Pradesh
+user_106,prod_5361,2,1,3,1,2025-03-23 11:45:09,Assam
+user_384,prod_715,18,0,1,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_344,prod_4347,18,1,3,0,2025-03-23 11:45:09,Himachal Pradesh
+user_406,prod_14890,2,3,0,0,2025-03-23 11:45:09,Jharkhand
+user_121,prod_12244,7,2,1,1,2025-03-23 11:45:09,Bihar
+user_374,prod_9646,3,4,3,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_309,prod_3490,9,3,2,0,2025-03-23 11:45:09,Gujarat
+user_268,prod_3626,6,4,1,0,2025-03-23 11:45:09,Goa
+user_470,prod_13759,1,3,0,1,2025-03-23 11:45:09,Lakshadweep
+user_359,prod_7398,2,1,2,1,2025-03-23 11:45:09,Himachal Pradesh
+user_239,prod_7562,16,1,1,0,2025-03-23 11:45:09,Daman & Diu
+user_185,prod_6506,8,5,3,0,2025-03-23 11:45:09,Chhattisgarh
+user_231,prod_8215,4,3,2,1,2025-03-23 11:45:09,Daman & Diu
+user_372,prod_1317,16,4,3,1,2025-03-23 11:45:09,Jammu & Kashmir
+user_132,prod_17793,10,2,0,0,2025-03-23 11:45:09,Bihar
+user_30,prod_7205,11,1,2,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_482,prod_14142,17,0,1,1,2025-03-23 11:45:09,Lakshadweep
+user_38,prod_10003,3,3,2,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_62,prod_4287,17,0,3,1,2025-03-23 11:45:09,Andhra Pradesh
+user_345,prod_15013,2,1,0,1,2025-03-23 11:45:09,Himachal Pradesh
+user_442,prod_15845,14,1,2,1,2025-03-23 11:45:09,Kerala
+user_412,prod_15920,14,1,1,0,2025-03-23 11:45:09,Jharkhand
+user_474,prod_672,3,5,2,1,2025-03-23 11:45:09,Lakshadweep
+user_110,prod_5851,8,4,3,1,2025-03-23 11:45:09,Assam
+user_476,prod_7152,19,4,2,0,2025-03-23 11:45:09,Lakshadweep
+user_441,prod_11769,18,3,2,1,2025-03-23 11:45:09,Karnataka
+user_349,prod_8213,16,4,2,1,2025-03-23 11:45:09,Himachal Pradesh
+user_147,prod_15704,13,4,0,0,2025-03-23 11:45:09,Chandigarh
+user_313,prod_7934,4,3,1,0,2025-03-23 11:45:09,Gujarat
+user_482,prod_9424,14,2,3,0,2025-03-23 11:45:09,Lakshadweep
+user_249,prod_13100,12,2,3,1,2025-03-23 11:45:09,Delhi
+user_214,prod_16473,12,5,1,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_347,prod_4324,2,4,0,0,2025-03-23 11:45:09,Himachal Pradesh
+user_298,prod_9808,13,3,3,0,2025-03-23 11:45:09,Gujarat
+user_387,prod_1882,17,0,0,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_263,prod_3286,2,4,1,1,2025-03-23 11:45:09,Delhi
+user_277,prod_4058,19,1,2,1,2025-03-23 11:45:09,Goa
+user_244,prod_12394,6,4,3,1,2025-03-23 11:45:09,Delhi
+user_178,prod_15192,19,1,1,1,2025-03-23 11:45:09,Chhattisgarh
+user_459,prod_2643,6,4,1,0,2025-03-23 11:45:09,Kerala
+user_286,prod_6962,6,5,3,1,2025-03-23 11:45:09,Goa
+user_241,prod_6796,15,1,2,1,2025-03-23 11:45:09,Daman & Diu
+user_28,prod_17640,9,4,3,0,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_243,prod_885,1,1,2,0,2025-03-23 11:45:09,Delhi
+user_189,prod_2143,10,3,3,1,2025-03-23 11:45:09,Chhattisgarh
+user_281,prod_1989,12,3,3,0,2025-03-23 11:45:09,Goa
+user_74,prod_13429,16,5,0,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_394,prod_17493,3,4,3,0,2025-03-23 11:45:09,Jharkhand
+user_40,prod_10651,9,5,2,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_334,prod_12288,4,0,3,1,2025-03-23 11:45:09,Haryana
+user_263,prod_2243,7,5,1,0,2025-03-23 11:45:09,Delhi
+user_408,prod_15902,2,2,3,0,2025-03-23 11:45:09,Jharkhand
+user_106,prod_5834,13,1,3,1,2025-03-23 11:45:09,Assam
+user_223,prod_13069,4,3,0,1,2025-03-23 11:45:09,Daman & Diu
+user_426,prod_2000,19,5,1,0,2025-03-23 11:45:09,Karnataka
+user_90,prod_14830,10,3,1,1,2025-03-23 11:45:09,Arunachal Pradesh
+user_172,prod_9606,9,0,1,0,2025-03-23 11:45:09,Chhattisgarh
+user_18,prod_10633,4,5,3,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_177,prod_12375,6,3,1,0,2025-03-23 11:45:09,Chhattisgarh
+user_425,prod_1917,19,3,2,1,2025-03-23 11:45:09,Karnataka
+user_113,prod_1254,12,3,2,1,2025-03-23 11:45:09,Assam
+user_301,prod_15260,6,5,0,1,2025-03-23 11:45:09,Gujarat
+user_469,prod_5840,11,3,2,0,2025-03-23 11:45:09,Lakshadweep
+user_32,prod_11873,15,5,2,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_155,prod_808,4,3,0,0,2025-03-23 11:45:09,Chandigarh
+user_277,prod_7638,16,4,2,0,2025-03-23 11:45:09,Goa
+user_57,prod_14796,16,4,0,0,2025-03-23 11:45:09,Andhra Pradesh
+user_511,prod_633,3,3,2,1,2025-03-23 11:45:09,Madhya Pradesh
+user_500,prod_8309,9,4,1,0,2025-03-23 11:45:09,Madhya Pradesh
+user_509,prod_17538,18,3,2,1,2025-03-23 11:45:09,Madhya Pradesh
+user_246,prod_667,11,2,0,1,2025-03-23 11:45:09,Delhi
+user_173,prod_16202,5,0,2,1,2025-03-23 11:45:09,Chhattisgarh
+user_192,prod_15839,10,3,2,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_272,prod_11882,8,3,0,0,2025-03-23 11:45:09,Goa
+user_60,prod_6426,15,0,0,1,2025-03-23 11:45:09,Andhra Pradesh
+user_311,prod_6715,9,0,1,0,2025-03-23 11:45:09,Gujarat
+user_196,prod_2444,7,3,2,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_338,prod_7853,1,1,2,1,2025-03-23 11:45:09,Haryana
+user_311,prod_13405,6,4,3,0,2025-03-23 11:45:09,Gujarat
+user_134,prod_2982,15,4,2,0,2025-03-23 11:45:09,Bihar
+user_460,prod_4109,17,4,2,1,2025-03-23 11:45:09,Kerala
+user_357,prod_5365,17,5,3,1,2025-03-23 11:45:09,Himachal Pradesh
+user_298,prod_7086,18,0,3,0,2025-03-23 11:45:09,Gujarat
+user_407,prod_8267,16,5,1,1,2025-03-23 11:45:09,Jharkhand
+user_200,prod_566,10,2,0,1,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_159,prod_739,5,0,2,1,2025-03-23 11:45:09,Chandigarh
+user_264,prod_4663,2,3,0,0,2025-03-23 11:45:09,Delhi
+user_170,prod_9205,7,1,0,1,2025-03-23 11:45:09,Chhattisgarh
+user_126,prod_6781,13,3,2,1,2025-03-23 11:45:09,Bihar
+user_240,prod_6887,1,1,0,1,2025-03-23 11:45:09,Daman & Diu
+user_106,prod_17766,9,5,2,0,2025-03-23 11:45:09,Assam
+user_59,prod_3470,15,4,0,0,2025-03-23 11:45:09,Andhra Pradesh
+user_286,prod_12706,9,0,3,1,2025-03-23 11:45:09,Goa
+user_64,prod_999,10,2,3,1,2025-03-23 11:45:09,Andhra Pradesh
+user_190,prod_11349,4,0,0,1,2025-03-23 11:45:09,Chhattisgarh
+user_232,prod_16498,9,4,0,1,2025-03-23 11:45:09,Daman & Diu
+user_337,prod_7387,4,5,0,1,2025-03-23 11:45:09,Haryana
+user_287,prod_14760,13,5,2,1,2025-03-23 11:45:09,Goa
+user_54,prod_14165,13,1,3,1,2025-03-23 11:45:09,Andhra Pradesh
+user_183,prod_15166,3,2,0,0,2025-03-23 11:45:09,Chhattisgarh
+user_390,prod_14163,8,0,1,1,2025-03-23 11:45:09,Jammu & Kashmir
+user_406,prod_1426,1,2,3,0,2025-03-23 11:45:09,Jharkhand
+user_159,prod_14281,6,1,2,0,2025-03-23 11:45:09,Chandigarh
+user_494,prod_14846,5,4,1,1,2025-03-23 11:45:09,Madhya Pradesh
+user_24,prod_16776,19,1,2,0,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_432,prod_15022,18,4,1,0,2025-03-23 11:45:09,Karnataka
+user_191,prod_7289,18,0,0,0,2025-03-23 11:45:09,Chhattisgarh
+user_194,prod_14610,20,0,0,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_368,prod_4690,8,0,3,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_314,prod_11198,18,1,1,0,2025-03-23 11:45:09,Gujarat
+user_319,prod_9387,15,5,1,1,2025-03-23 11:45:09,Haryana
+user_167,prod_15030,5,2,2,1,2025-03-23 11:45:09,Chhattisgarh
+user_476,prod_2245,5,2,0,1,2025-03-23 11:45:09,Lakshadweep
+user_479,prod_328,12,2,0,1,2025-03-23 11:45:09,Lakshadweep
+user_157,prod_1215,5,0,3,0,2025-03-23 11:45:09,Chandigarh
+user_148,prod_13504,12,4,1,1,2025-03-23 11:45:09,Chandigarh
+user_513,prod_13640,2,0,0,0,2025-03-23 11:45:09,Madhya Pradesh
+user_390,prod_15624,16,4,0,1,2025-03-23 11:45:09,Jammu & Kashmir
+user_479,prod_10448,8,2,2,1,2025-03-23 11:45:09,Lakshadweep
+user_412,prod_6643,16,2,2,1,2025-03-23 11:45:09,Jharkhand
+user_93,prod_1901,3,4,3,0,2025-03-23 11:45:09,Assam
+user_324,prod_3030,3,0,2,0,2025-03-23 11:45:09,Haryana
+user_185,prod_9240,15,4,1,0,2025-03-23 11:45:09,Chhattisgarh
+user_114,prod_14198,16,1,1,0,2025-03-23 11:45:09,Assam
+user_265,prod_16643,17,4,1,1,2025-03-23 11:45:09,Delhi
+user_434,prod_13035,2,4,2,1,2025-03-23 11:45:09,Karnataka
+user_124,prod_9175,19,2,3,0,2025-03-23 11:45:09,Bihar
+user_96,prod_16113,15,4,3,0,2025-03-23 11:45:09,Assam
+user_59,prod_5756,8,5,1,0,2025-03-23 11:45:09,Andhra Pradesh
+user_139,prod_2905,2,2,3,0,2025-03-23 11:45:09,Bihar
+user_318,prod_7508,17,5,1,1,2025-03-23 11:45:09,Haryana
+user_353,prod_14928,4,4,1,0,2025-03-23 11:45:09,Himachal Pradesh
+user_418,prod_4873,17,1,0,0,2025-03-23 11:45:09,Karnataka
+user_472,prod_17432,19,4,0,1,2025-03-23 11:45:09,Lakshadweep
+user_423,prod_4740,15,4,0,1,2025-03-23 11:45:09,Karnataka
+user_423,prod_5213,14,5,3,1,2025-03-23 11:45:09,Karnataka
+user_441,prod_5483,1,0,0,1,2025-03-23 11:45:09,Karnataka
+user_327,prod_10803,20,5,0,0,2025-03-23 11:45:09,Haryana
+user_335,prod_4512,18,1,0,1,2025-03-23 11:45:09,Haryana
+user_92,prod_4800,17,0,2,1,2025-03-23 11:45:09,Assam
+user_201,prod_4807,20,5,2,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_140,prod_13211,9,1,0,0,2025-03-23 11:45:09,Bihar
+user_91,prod_7890,9,2,0,1,2025-03-23 11:45:09,Arunachal Pradesh
+user_116,prod_14439,19,2,1,0,2025-03-23 11:45:09,Assam
+user_58,prod_15362,5,1,1,1,2025-03-23 11:45:09,Andhra Pradesh
+user_403,prod_11895,19,0,0,0,2025-03-23 11:45:09,Jharkhand
+user_97,prod_12317,18,2,1,0,2025-03-23 11:45:09,Assam
+user_1,prod_7214,15,0,2,0,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_356,prod_5067,15,1,1,0,2025-03-23 11:45:09,Himachal Pradesh
+user_103,prod_15535,10,5,1,0,2025-03-23 11:45:09,Assam
+user_397,prod_4835,5,1,0,0,2025-03-23 11:45:09,Jharkhand
+user_122,prod_12485,12,5,1,1,2025-03-23 11:45:09,Bihar
+user_400,prod_514,8,3,0,0,2025-03-23 11:45:09,Jharkhand
+user_125,prod_1704,5,0,2,0,2025-03-23 11:45:09,Bihar
+user_132,prod_307,17,4,1,0,2025-03-23 11:45:09,Bihar
+user_458,prod_4311,2,2,0,0,2025-03-23 11:45:09,Kerala
+user_138,prod_1882,10,0,0,1,2025-03-23 11:45:09,Bihar
+user_67,prod_17339,11,2,2,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_354,prod_2565,16,0,1,0,2025-03-23 11:45:09,Himachal Pradesh
+user_384,prod_16641,15,4,2,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_346,prod_10523,3,1,1,1,2025-03-23 11:45:09,Himachal Pradesh
+user_499,prod_7360,10,4,2,0,2025-03-23 11:45:09,Madhya Pradesh
+user_128,prod_10203,9,0,2,1,2025-03-23 11:45:09,Bihar
+user_155,prod_5356,3,2,0,1,2025-03-23 11:45:09,Chandigarh
+user_359,prod_17247,11,3,2,0,2025-03-23 11:45:09,Himachal Pradesh
+user_114,prod_15573,18,1,0,1,2025-03-23 11:45:09,Assam
+user_106,prod_7941,17,0,2,1,2025-03-23 11:45:09,Assam
+user_157,prod_10495,17,0,1,1,2025-03-23 11:45:09,Chandigarh
+user_159,prod_16581,6,3,3,1,2025-03-23 11:45:09,Chandigarh
+user_170,prod_3519,10,0,2,1,2025-03-23 11:45:09,Chhattisgarh
+user_425,prod_7376,2,1,3,1,2025-03-23 11:45:09,Karnataka
+user_152,prod_3457,1,1,3,0,2025-03-23 11:45:09,Chandigarh
+user_353,prod_4158,13,0,1,0,2025-03-23 11:45:09,Himachal Pradesh
+user_225,prod_55,15,3,2,1,2025-03-23 11:45:09,Daman & Diu
+user_455,prod_2719,8,1,3,1,2025-03-23 11:45:09,Kerala
+user_60,prod_5908,10,1,2,1,2025-03-23 11:45:09,Andhra Pradesh
+user_196,prod_11009,16,5,1,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_292,prod_9480,6,3,1,1,2025-03-23 11:45:09,Gujarat
+user_29,prod_11366,8,2,2,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_471,prod_7062,15,0,0,0,2025-03-23 11:45:09,Lakshadweep
+user_33,prod_3105,10,0,3,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_32,prod_14614,14,1,1,0,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_405,prod_8339,7,5,0,0,2025-03-23 11:45:09,Jharkhand
+user_190,prod_10263,8,3,3,1,2025-03-23 11:45:09,Chhattisgarh
+user_199,prod_17085,6,5,3,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_176,prod_7992,9,2,2,1,2025-03-23 11:45:09,Chhattisgarh
+user_343,prod_5257,16,1,1,1,2025-03-23 11:45:09,Himachal Pradesh
+user_64,prod_16915,3,1,1,0,2025-03-23 11:45:09,Andhra Pradesh
+user_459,prod_14443,15,0,0,1,2025-03-23 11:45:09,Kerala
+user_172,prod_13008,8,5,2,0,2025-03-23 11:45:09,Chhattisgarh
+user_103,prod_2045,7,4,0,0,2025-03-23 11:45:09,Assam
+user_32,prod_16718,19,2,2,0,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_365,prod_9645,3,0,2,1,2025-03-23 11:45:09,Himachal Pradesh
+user_272,prod_6273,15,4,0,0,2025-03-23 11:45:09,Goa
+user_323,prod_15690,10,1,2,0,2025-03-23 11:45:09,Haryana
+user_302,prod_6510,8,0,1,0,2025-03-23 11:45:09,Gujarat
+user_36,prod_1742,2,0,3,1,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_57,prod_14976,1,0,2,1,2025-03-23 11:45:09,Andhra Pradesh
+user_274,prod_8276,11,0,1,1,2025-03-23 11:45:09,Goa
+user_261,prod_7651,3,4,1,0,2025-03-23 11:45:09,Delhi
+user_47,prod_6072,8,5,1,1,2025-03-23 11:45:09,Andhra Pradesh
+user_379,prod_13310,9,1,2,1,2025-03-23 11:45:09,Jammu & Kashmir
+user_484,prod_16021,2,5,0,0,2025-03-23 11:45:09,Lakshadweep
+user_178,prod_15763,18,5,0,0,2025-03-23 11:45:09,Chhattisgarh
+user_60,prod_4130,5,3,2,0,2025-03-23 11:45:09,Andhra Pradesh
+user_166,prod_4324,16,0,0,0,2025-03-23 11:45:09,Chandigarh
+user_122,prod_8300,13,5,2,0,2025-03-23 11:45:09,Bihar
+user_208,prod_3155,20,4,2,1,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_91,prod_11558,6,5,2,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_56,prod_8901,17,3,3,1,2025-03-23 11:45:09,Andhra Pradesh
+user_143,prod_8703,17,3,1,0,2025-03-23 11:45:09,Chandigarh
+user_239,prod_9755,7,1,1,0,2025-03-23 11:45:09,Daman & Diu
+user_383,prod_16303,5,3,0,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_303,prod_5517,6,4,1,1,2025-03-23 11:45:09,Gujarat
+user_369,prod_9500,18,2,0,0,2025-03-23 11:45:09,Jammu & Kashmir
+user_36,prod_12824,6,2,0,0,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_404,prod_1742,19,5,0,0,2025-03-23 11:45:09,Jharkhand
+user_297,prod_52,4,5,3,0,2025-03-23 11:45:09,Gujarat
+user_48,prod_17404,13,4,0,0,2025-03-23 11:45:09,Andhra Pradesh
+user_296,prod_3409,4,4,2,1,2025-03-23 11:45:09,Gujarat
+user_439,prod_6957,5,5,3,0,2025-03-23 11:45:09,Karnataka
+user_263,prod_15653,13,0,2,0,2025-03-23 11:45:09,Delhi
+user_344,prod_16280,4,4,1,1,2025-03-23 11:45:09,Himachal Pradesh
+user_491,prod_4019,7,4,3,1,2025-03-23 11:45:09,Lakshadweep
+user_205,prod_17406,19,5,1,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_494,prod_12485,8,5,2,0,2025-03-23 11:45:09,Madhya Pradesh
+user_256,prod_9446,15,1,0,0,2025-03-23 11:45:09,Delhi
+user_145,prod_7315,12,1,2,1,2025-03-23 11:45:09,Chandigarh
+user_459,prod_14634,8,4,2,1,2025-03-23 11:45:09,Kerala
+user_324,prod_16793,11,0,0,1,2025-03-23 11:45:09,Haryana
+user_15,prod_6692,3,0,3,0,2025-03-23 11:45:09,Andhra Pradesh
+user_455,prod_7152,4,2,0,1,2025-03-23 11:45:09,Kerala
+user_427,prod_2436,13,4,1,1,2025-03-23 11:45:09,Karnataka
+user_451,prod_13750,18,2,1,1,2025-03-23 11:45:09,Kerala
+user_32,prod_10652,20,4,1,0,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_472,prod_3500,7,2,3,1,2025-03-23 11:45:09,Lakshadweep
+user_424,prod_11794,13,3,2,1,2025-03-23 11:45:09,Karnataka
+user_289,prod_13691,3,2,2,1,2025-03-23 11:45:09,Goa
+user_293,prod_3607,2,2,1,0,2025-03-23 11:45:09,Gujarat
+user_194,prod_17024,18,2,1,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_445,prod_5420,16,2,3,1,2025-03-23 11:45:09,Kerala
+user_206,prod_14356,5,1,1,1,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_370,prod_746,5,0,1,1,2025-03-23 11:45:09,Jammu & Kashmir
+user_264,prod_6093,1,1,0,0,2025-03-23 11:45:09,Delhi
+user_125,prod_4195,13,4,0,0,2025-03-23 11:45:09,Bihar
+user_109,prod_274,9,1,1,0,2025-03-23 11:45:09,Assam
+user_23,prod_12510,5,5,3,0,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_247,prod_6829,11,2,3,1,2025-03-23 11:45:09,Delhi
+user_198,prod_584,19,0,2,0,2025-03-23 11:45:09,Dadra & Nagar Haveli
+user_48,prod_14783,3,1,1,0,2025-03-23 11:45:09,Andhra Pradesh
+user_270,prod_10335,17,3,1,0,2025-03-23 11:45:09,Goa
+user_265,prod_6347,18,5,0,0,2025-03-23 11:45:09,Delhi
+user_17,prod_2326,2,4,0,0,2025-03-23 11:45:09,Andhra Pradesh
+user_150,prod_14701,16,4,3,0,2025-03-23 11:45:09,Chandigarh
+user_498,prod_2730,6,0,2,0,2025-03-23 11:45:09,Madhya Pradesh
+user_267,prod_11715,12,4,1,1,2025-03-23 11:45:09,Goa
+user_260,prod_12289,5,4,2,1,2025-03-23 11:45:09,Delhi
+user_432,prod_2025,1,5,1,0,2025-03-23 11:45:09,Karnataka
+user_24,prod_10429,17,0,1,0,2025-03-23 11:45:09,Andaman and Nicobar Islands
+user_229,prod_2293,11,2,3,1,2025-03-23 11:45:09,Daman & Diu
+user_186,prod_9645,4,2,0,1,2025-03-23 11:45:09,Chhattisgarh
+user_86,prod_16008,16,3,2,0,2025-03-23 11:45:09,Arunachal Pradesh
+user_276,prod_4791,3,1,2,1,2025-03-23 11:45:09,Goa
+user_447,prod_3898,16,4,2,0,2025-03-23 11:45:09,Kerala
+user_436,prod_12944,17,0,2,0,2025-03-23 11:45:09,Karnataka
+user_186,prod_12548,5,0,2,1,2025-03-23 11:45:09,Chhattisgarh
+user_456,prod_4418,14,4,2,0,2025-03-23 11:45:09,Kerala
+user_284,prod_16483,17,0,1,0,2025-03-23 11:45:09,Goa
+user_490,prod_2582,11,0,2,0,2025-03-23 11:45:09,Lakshadweep
+user_342,prod_11435,14,5,1,0,2025-03-23 11:45:09,Himachal Pradesh

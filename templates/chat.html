@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Chat - {{ other_user.username }}</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Chat Container */
+        .chat-container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            height: 80vh;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+        }
+
+        /* Users List (Left Section) */
+        .users-list {
+            width: 25%;
+            background-color: #f0f2f5;
+            padding: 20px;
+            border-right: 1px solid #e0e7ff;
+            overflow-y: auto;
+        }
+
+        .users-list h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .users-list .user {
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: background-color 0.3s ease;
+        }
+
+        .user-profile:hover {
+            background-color: #e0e7ff;
+        }
+
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ccc;
+        }
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .user-name {
+            font-size: 14px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .last-message-time {
+            font-size: 12px;
+            color: #888;
+            margin-top: 2px;
+        }
+
+        /* Chat Area (Right Section) */
+        .chat-area {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        /* Chat Header */
+        .chat-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #e0e7ff;
+        }
+
+        .chat-header .profile-img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .chat-header h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .chat-header p {
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Message Container */
+        .message-container {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .message {
+            max-width: 70%;
+            padding: 10px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        /* Your messages (right side) */
+        .message.sender {
+            background-color: #00a651;
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 0;
+        }
+
+        /* Other user's messages (left side) */
+        .message.receiver {
+            background-color: #f1f1f1;
+            color: #333;
+            align-self: flex-start;
+            border-bottom-left-radius: 0;
+        }
+
+        .timestamp {
+            font-size: 12px;
+            color: white;
+            margin-top: 4px;
+            display: block;
+        }
+
+        .seen-status {
+            font-size: 12px;
+            color: rgb(76, 4, 244);
+            margin-left: 8px;
+        }
+
+        /* Input Section */
+        .chat-input-container {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-top: 1px solid #e0e7ff;
+        }
+
+        .chat-input {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .chat-input:focus {
+            border-color: #a29bfe;
+        }
+
+        .send-btn {
+            background: linear-gradient(135deg, #00a651, #1baf7f);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .send-btn:hover {
+            background: linear-gradient(135deg, #1baf7f, #00a651);
+            transform: scale(1.05);
+        }
+
+        .send-btn i {
+            font-size: 18px;
+        }
+
+        /* No Chat Selected */
+        .no-chat-selected {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 18px;
+            color: #777;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <!-- Users List (Left Section) -->
+        <div class="users-list">
+            <h3>Farmers & Customers</h3>
+            {% for chat_room_data in chat_rooms_with_other_user %}
+                <form action="{% url 'chat_room' room_name=chat_room_data.room.name %}" method="GET">
+                    <button type="submit" class="user">
+                        <div class="user-profile">
+                            <img src="{{ chat_room_data.other_user.profile_picture_url }}" 
+                                 alt="{{ chat_room_data.other_user.username }}" 
+                                 class="profile-img">
+                            <div class="user-info">
+                                <p class="user-name">{{ chat_room_data.other_user.username }}</p>
+                                <p class="last-message-time">Last message: 2 min ago</p>
+                            </div>
+                        </div>
+                    </button>
+                </form>
+            {% endfor %}
+        </div>
+
+        <!-- Chat Area (Right Section) -->
+        <div class="chat-area" id="chatArea">
+            {% if other_user %}
+                <!-- Chat Header -->
+                <div class="chat-header" id="chatHeader">
+                    <img src="{{ other_user.profile_picture_url }}" 
+                         alt="User Profile" 
+                         class="profile-img">
+                    <div>
+                        <h2 id="chatUserName">{{ other_user.first_name }} {{ other_user.last_name }}</h2>
+                        <p id="chatLastSeen"></p>
+                    </div>
+                </div>
+
+                <!-- Message Container -->
+                <div class="message-container" id="chat-box">
+                    {% for message in messages %}
+                        <div class="message {% if message.sender == request.user %}sender{% else %}receiver{% endif %}">
+                            {{ message.content }}
+                            <span class="timestamp">{{ message.timestamp|date:"d M Y, h:i A" }}</span>
+                            <span class="seen-status">✔✔ Seen</span>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <!-- Input Section -->
+                <div class="chat-input-container">
+                    <input type="text" class="chat-input" id="message-input" placeholder="Type a message...">
+                    <button class="send-btn" id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            {% else %}
+                <!-- No Chat Selected -->
+                <div class="no-chat-selected">
+                    <p>Select a user to start chatting.</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("DOM fully loaded and parsed");
+            {% comment %} alert("DOM fully loaded and parsed"); {% endcomment %}
+    
+            let roomName = "{{ room.name }}".trim();
+            let username = "{{ request.user.username }}";
+            let chatBox = document.getElementById("chat-box");
+            let typingIndicator = document.getElementById("typing-indicator");
+            let messageInput = document.getElementById("message-input");
+            let sendButton = document.getElementById("send-btn");
+            let isTyping = false;
+            let typingTimeout;
+            let selectedUser = null;
+    
+            console.log("Initialized variables:", { roomName, username, chatBox, typingIndicator, messageInput, sendButton }); 
+            {% comment %} alert("Initialized variables");  {% endcomment %}
+    
+            // WebSocket Connection
+            function connectWebSocket() {
+                let protocol = window.location.protocol === "https:" ? "wss" : "ws";
+                let socketUrl = `${protocol}://${window.location.host}/ws/chat/${roomName}/`;
+
+                console.log("Connecting to WebSocket:", socketUrl); 
+                {% comment %} alert(`Connecting to WebSocket: ${socketUrl}`);  {% endcomment %}
+    
+                let socket = new WebSocket(socketUrl);
+    
+                socket.onopen = function () {
+                    console.log("WebSocket connected!"); 
+                    {% comment %} alert("WebSocket connected!"); {% endcomment %}
+                };
+    
+                socket.onerror = function (error) {
+                    console.log("WebSocket error occurred:", error); 
+                    {% comment %} alert(`WebSocket error occurred: ${error}`);  {% endcomment %}
+                    setTimeout(connectWebSocket, 5000); // Reconnect after 5 seconds
+                };
+    
+                socket.onclose = function () {
+                    console.log("WebSocket connection closed!"); // Debugging
+                    {% comment %} alert("WebSocket connection closed!");  {% endcomment %}
+                    setTimeout(connectWebSocket, 5000); // Reconnect after 5 seconds
+                };
+    
+                socket.onmessage = function (event) {
+                    let data = JSON.parse(event.data);
+                    {% comment %} console.log("WebSocket message received:", data);  {% endcomment %}
+                    {% comment %} alert(`WebSocket message received: ${JSON.stringify(data)}`);  {% endcomment %}
+    
+                    if (data.type === "chat_message") {
+                        appendMessage(data.username, data.message, data.timestamp, data.is_seen);
+                    }
+    
+                    if (data.type === "user_typing") {
+                        showTypingIndicator(data.username);
+                    }
+                };
+    
+                return socket;
+            }
+    
+            let socket = connectWebSocket();
+    
+            // Open Chat with Selected User
+            async function openChat(user) {
+                console.log("Opening chat with user:", user); 
+                {% comment %} alert(`Opening chat with user: ${user}`);  {% endcomment %}
+    
+                selectedUser = user;
+    
+                // Update the chat header
+                document.getElementById("chatUserName").innerText = "Chat with " + user;
+    
+                // Clear the chat box
+                chatBox.innerHTML = "";
+    
+                // Fetch chat history for the selected user
+                try {
+                    console.log("Fetching chat history for user:", user); 
+                    {% comment %} alert(`Fetching chat history for user: ${user}`);  {% endcomment %}
+    
+                    const response = await fetch(`/get-chat-history/?chat_with=${user}`);
+                    const data = await response.json();
+                    console.log("Chat history response:", data); 
+                    {% comment %} alert(`Chat history response: ${JSON.stringify(data)}`);  {% endcomment %}
+    
+                    if (data.status === "success") {
+                        // Append each message to the chat box
+                        data.messages.forEach(message => {
+                            appendMessage(message.sender.username, message.content, message.timestamp, message.is_seen);
+                        });
+                    } else {
+                        console.error("Failed to fetch chat history:", data.message);
+                        {% comment %} alert(`Failed to fetch chat history: ${data.message}`);  {% endcomment %}
+                    }
+                } catch (error) {
+                    console.error("Error fetching chat history:", error); 
+                    {% comment %} alert(`Error fetching chat history: ${error}`);  {% endcomment %}
+                }
+    
+                // Mark messages as seen
+                markMessagesAsSeen();
+    
+                // Connect to the WebSocket room for the selected user
+                connectWebSocket();
+            }
+    
+            // Append Message to Chat Box
+            function appendMessage(user, message, timestamp, isSeen) {
+                console.log("Appending message:", { user, message, timestamp, isSeen }); 
+                {% comment %} alert(`Appending message: ${message} from ${user}`);  {% endcomment %}
+    
+                let messageElement = document.createElement("div");
+    
+                // Determine if the message is sent by the current user
+                if (user === username) {
+                    messageElement.classList.add("message", "sender"); // Add 'sender' class for current user's messages
+                } else {
+                    messageElement.classList.add("message", "receiver"); // Add 'receiver' class for other users' messages
+                }
+    
+                // Add message content
+                let messageContent = `<strong>${user}:</strong> ${message}`;
+    
+                // Add timestamp
+                let timestampElement = `<span class="timestamp">${new Date(timestamp).toLocaleTimeString()}</span>`;
+    
+                // Add seen status (only for sender's messages)
+                let seenStatus = "";
+                if (user === username && isSeen) {
+                    seenStatus = `<span class="seen-status">✔ Seen</span>`;
+                }
+    
+                // Combine all elements
+                messageElement.innerHTML = `${messageContent} ${timestampElement} ${seenStatus}`;
+    
+                // Append message to chat box
+                chatBox.appendChild(messageElement);
+    
+                // Auto-scroll to the latest message
+                chatBox.scrollTop = chatBox.scrollHeight;
+    
+                // Mark messages as seen (only for received messages)
+                if (user !== username) {
+                    markMessagesAsSeen();
+                }
+            }
+    
+            // Send Message
+            function sendMessage() {
+                let message = messageInput.value.trim();
+                console.log("Sending message:", message); // Debugging
+                alert(`Sending message: ${message}`); // Debugging
+    
+                if (message !== "") {
+                    if (socket.readyState === WebSocket.OPEN) {
+                        // Send the message to the server
+                        socket.send(JSON.stringify({ type: "chat_message", message: message, username: username }));
+    
+                        // Clear the input field
+                        messageInput.value = "";
+                        messageInput.focus();
+                    } else {
+                        console.error("WebSocket is not connected!"); 
+                        {% comment %} alert("WebSocket is not connected!"); // Debugging {% endcomment %}
+                    }
+                }
+            }
+    
+            // Typing Notification
+            function sendTypingNotification() {
+                console.log("Sending typing notification"); // Debugging
+                {% comment %} alert("Sending typing notification");  {% endcomment %}
+    
+                if (!isTyping) {
+                    isTyping = true;
+                    socket.send(JSON.stringify({ type: "typing", username: username }));
+                }
+    
+                clearTimeout(typingTimeout);
+                typingTimeout = setTimeout(() => {
+                    isTyping = false;
+                }, 2000); // Stop typing notification after 2 seconds of inactivity
+            }
+    
+            // Show Typing Indicator
+            function showTypingIndicator(user) {
+                console.log("Showing typing indicator for user:", user); // Debugging
+                {% comment %} alert(`Showing typing indicator for user: ${user}`); {% endcomment %}
+    
+                typingIndicator.innerText = `${user} is typing...`;
+                clearTimeout(typingTimeout);
+                typingTimeout = setTimeout(() => {
+                    typingIndicator.innerText = "";
+                }, 2000);
+            }
+    
+            // Mark Messages as Seen
+            function markMessagesAsSeen() {
+                console.log("Marking messages as seen for user:", selectedUser); // Debugging
+                {% comment %} alert(`Marking messages as seen for user: ${selectedUser}`); {% endcomment %}
+    
+                if (selectedUser) {
+                    fetch('/mark-seen/', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRFToken': '{{ csrf_token }}'
+                        },
+                        body: JSON.stringify({ chat_with: selectedUser })
+                    });
+                }
+            }
+    
+            // Event Listeners
+            sendButton.addEventListener("click", sendMessage);
+            messageInput.addEventListener("input", sendTypingNotification);
+            messageInput.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    sendMessage();
+                }
+            });
+    
+            // Close WebSocket on Page Unload
+            window.addEventListener("beforeunload", function () {
+                console.log("Closing WebSocket on page unload"); // Debugging
+                {% comment %} alert("Closing WebSocket on page unload");  {% endcomment %}
+                socket.close();
+            });
+        });
+    </script>
+</body>
+</html>
