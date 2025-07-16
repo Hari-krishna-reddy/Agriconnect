@@ -146,7 +146,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'harikrishnachennuri537@gmail.com'
-EMAIL_HOST_PASSWORD = 'ynly njid llov dhnz'
+EMAIL_HOST_PASSWORD = 'abcs'
 
 
 # ASGI Configuration
